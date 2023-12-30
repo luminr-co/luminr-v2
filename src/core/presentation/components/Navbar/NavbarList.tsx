@@ -30,8 +30,8 @@ export default function NavbarList({onClose}:Props) {
 
 
   return (
-    <nav className="container font-secondary lg:text-xl text-3xl font-medium lg:font-normal text-beige flex lg:flex-row flex-col lg:justify-center gap-4 lg:h-auto h-screen bg-black lg:gap-11 p-6 lg:p-0 shadow-[0_7px_14px_0px_rgba(0, 0, 0, 0.40)] mx-6 lg:mx-0">
-      <button className="flex flex-row justify-end items-end mb-8 lg:hidden" onClick={onClose}>
+    <nav className="container font-secondary lg:text-xl text-3xl font-medium lg:font-normal text-beige flex lg:flex-row flex-col lg:justify-center gap-4 lg:h-auto h-screen bg-black lg:gap-11 lg:p-0 shadow-[0_7px_14px_0px_rgba(0, 0, 0, 0.40)] px-6 lg:pt-0 lg:mx-0">
+      <button className="flex flex-row justify-end items-end mb-3 lg:hidden mt-8" onClick={onClose}>
         <CloseIcon/>
       </button>
       <li

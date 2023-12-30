@@ -53,7 +53,7 @@ export default function ProcessSection() {
     },
   ];
   return (
-    <section className="lg:px-56 px-6 lg:pt-36 pt-28">
+    <section className="lg:px-56 px-6 lg:pt-36 pt-28 max-w-full">
       <SectionHeader sectionName="process" />
       <h1 className="lg:text-5xl text-2xl font-extrabold text-beige text-center lg:mb-40 mb-10">
         At Luminr, We Have Well Defined Processes to Help You Save Time and

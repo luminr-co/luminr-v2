@@ -23,7 +23,7 @@ export default function ServiceSection() {
   ];
   return (
     <div
-      className="px-28 bg-black lg:py-40 py-20"
+      className="lg:px-28 px-5 bg-black lg:py-40 py-20"
       id="services container font-secondary"
     >
       <SectionHeader sectionName="services" />

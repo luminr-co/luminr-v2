@@ -1,8 +1,7 @@
 export default function HandOff() {
   return (
     <svg
-      width="380"
-      height="354"
+      className="lg:w-96 w-56"
       viewBox="0 0 380 354"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

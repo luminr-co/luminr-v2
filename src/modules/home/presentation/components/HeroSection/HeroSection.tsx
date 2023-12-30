@@ -3,7 +3,7 @@ import CallIcon from "../../../../../core/presentation/assets/icons/CallIcon";
 import HeroImage from "../../assets/images/HeroSection/HeroImage";
 export default function HeroSection() {
   return (
-    <section className="flex lg:flex-row w-full lg:bg-beige bg-black relative pt-30 lg:pt-0">
+    <section className="flex lg:flex-row w-full lg:bg-beige bg-black relative pt-32 max-w-full lg:pt-0">
       <div className="bg-black absolute top-0 bottom-0 right-0 w-1/2 z-10 lg:inline-block hidden"></div>
       <div className="container mx-auto flex lg:flex-row flex-col-reverse justify-center items-center">
         <div className="flex flex-col lg:gap-12 lg:bg-beige bg-black pl-10 lg:py-56 pr-6 mr-4 basis-1/2">

@@ -7,7 +7,7 @@ interface ProcessProps {
 export default function ProcessComponent({ process }: ProcessProps) {
   return (
     <div className="flex lg:flex-row flex-col font-secondary lg:gap-12 lg:items-center p-10 border border-orange rounded-2xl w-full">
-      <div>{process.image}</div>
+      <div className="mx-auto">{process.image}</div>
       <div className="flex flex-col">
         <h1 className="lg:mb-2 lg:text-3xl text-2xl font-medium text-beige">
           {process.title}
