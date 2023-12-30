@@ -28,7 +28,10 @@ export default function BenefitSection() {
   return (
     <div className="flex flex-col justify-center items-center lg:px-64 px-6 lg:pt-48 pt-24">
       <SectionHeader sectionName="benefits" />
-      <h1 className="lg:text-5xl text-2xl font-extrabold text-beige text-center mb-8">
+      <h1
+        className="lg:text-5xl text-2xl font-extrabold text-beige text-center mb-8"
+        id="benefits"
+      >
         Get in front of users who are already searching for the products you
         sell
       </h1>

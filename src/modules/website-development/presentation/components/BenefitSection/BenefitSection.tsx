@@ -28,7 +28,10 @@ export default function BenefitSection() {
   return (
     <div className="flex flex-col justify-center items-center lg:px-64 px-6">
       <SectionHeader sectionName="benefits" />
-      <h1 className="lg:text-5xl text-2xl font-extrabold text-beige text-center mb-4">
+      <h1
+        className="lg:text-5xl text-2xl font-extrabold text-beige text-center mb-4"
+        id="benefits"
+      >
         Why Luminr Will Be Your Guide to Success
       </h1>
       <BenefitList benefits={benefits} />
