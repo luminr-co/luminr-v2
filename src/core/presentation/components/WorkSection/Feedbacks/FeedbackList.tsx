@@ -24,16 +24,12 @@ export default function FeedbackList({ variant, feedbacks }: Props) {
    }
    {
     variant=='secondary' && (
-      <div className="overflow-x-hidden w-full px-24" id="testimonials">
-      <div className="flex flex-row overflow-x-scroll">
-    <div className=" flex flex-row overflow-x-scroll w-full">
+      <div className="lg:overflow-x-hidden w-full lg:px-24 px-5" id="testimonials">
+      <div className="flex lg:flex-row flex-col gap-6">
       {feedbacks.map((feedback) => (
-        <div className="min-w-[33.3333%]">
         <FeedbackComponent feedbackCard={feedback} variant="secondary"/>
-        </div>
       ))}
-    </div>
-    </div>
+      </div>
     </div>
     )
    }

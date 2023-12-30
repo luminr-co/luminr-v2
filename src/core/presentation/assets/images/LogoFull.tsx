@@ -1,11 +1,9 @@
-import React from "react";
 
 export default function LogoFull() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="125"
-      height="48"
+      className="w-32"
       viewBox="0 0 125 48"
       fill="none"
     >

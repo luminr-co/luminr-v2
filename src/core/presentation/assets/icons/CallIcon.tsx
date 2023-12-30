@@ -2,8 +2,7 @@ export default function CallIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
+      className="lg:w-6 lg:h-6 w-4 h-4"
       viewBox="0 0 24 24"
       fill="none"
     >

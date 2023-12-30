@@ -5,8 +5,8 @@ export interface SectionHeaderProps {
 export default function SectionHeader({ sectionName }: SectionHeaderProps) {
   return (
     <div>
-      {" "}
-      <h3 className="text-2xl font-medium text-gray text-center mb-4 uppercase">
+    
+      <h3 className="lg:text-2xl text-sm font-medium text-gray text-center mb-4 uppercase">
         {sectionName}
       </h3>
     </div>

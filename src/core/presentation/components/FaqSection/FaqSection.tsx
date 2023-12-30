@@ -38,9 +38,12 @@ export default function FaqSection() {
     },
   ];
   return (
-    <section id="faq" className="pt-52">
+    <section className="lg:pt-52 pt-24">
       <SectionHeader sectionName="faq" />
-      <h1 className="text-5xl font-extrabold font-primary text-beige text-center mb-16 ">
+      <h1
+        className="lg:text-5xl text-2xl font-extrabold font-primary text-beige text-center lg:mb-16 mb-10"
+        id="faq"
+      >
         <span className="text-orange">Got Questions? </span>
         We Have Answers!
       </h1>

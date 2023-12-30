@@ -2,8 +2,7 @@ export default function LogoSmall() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="33"
-      height="48"
+      className="w-8"
       viewBox="0 0 33 48"
       fill="none"
     >

@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
-export default function ToggleButton() {
+import PricingPlansWeb from "../../../../modules/website-development/presentation/components/PricingSection/PricingPlansWeb";
+import PricingPlanSeo from "../../../../modules/seo/presentation/components/PricingSection/PricingPlanSeo";
+
+interface Props {
+  package?: boolean;
+}
+
+export default function ToggleButton({ package: isPackage }: Props) {
   const [isActiveWebsite, setActiveWebsite] = useState(true);
   const [isActiveSEO, setActiveSEO] = useState(false);
 
@@ -14,25 +21,39 @@ export default function ToggleButton() {
     setActiveSEO(true);
   };
   return (
-    <div className="flex flex-row border-8 border-orange gap-0 justify-between rounded-xl w-min mx-auto mb-24">
-      <button
-        className={twMerge(
-          "px-4 py-2 font-bold text-3xl text-beige text-center w-48",
-          isActiveWebsite && "bg-orange"
-        )}
-        onClick={handleWebsiteClick}
-      >
-        WEBSITE
-      </button>
-      <button
-        className={twMerge(
-          "px-4 py-2 font-bold text-3xl text-beige text-center w-48",
-          isActiveSEO && "bg-orange"
-        )}
-        onClick={handleSEOClick}
-      >
-        SEO
-      </button>
-    </div>
+    <>
+      <div className="flex flex-row lg:border-8 border-4 border-orange gap-0 justify-between rounded-xl w-min mx-auto mb-24">
+        <button
+          className={twMerge(
+            "lg:px-4 lg:py-2 px-3 py-1 font-bold lg:text-3xl text-lg text-beige text-center lg:w-48 w-32",
+            isActiveWebsite && "bg-orange"
+          )}
+          onClick={handleWebsiteClick}
+        >
+          WEBSITE
+        </button>
+        <button
+          className={twMerge(
+            "lg:px-4 lg:py-2 px-3 py-1 font-bold lg:text-3xl text-lg text-beige text-center lg:w-48 w-32",
+            isActiveSEO && "bg-orange"
+          )}
+          onClick={handleSEOClick}
+        >
+          SEO
+        </button>
+      </div>
+
+      {isPackage && isActiveWebsite && (
+        <div className="mt-16">
+          <PricingPlansWeb />
+        </div>
+      )}
+
+      {isPackage && isActiveSEO && (
+        <div className="mt-16 mx-20">
+          <PricingPlanSeo />
+        </div>
+      )}
+    </>
   );
 }

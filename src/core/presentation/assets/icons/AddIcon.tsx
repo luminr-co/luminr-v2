@@ -1,8 +1,7 @@
 export default function AddIcon() {
   return (
     <svg
-      width="23"
-      height="23"
+      className="lg:w-6 lg:h-6 w-2 h-2"
       viewBox="0 0 23 23"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

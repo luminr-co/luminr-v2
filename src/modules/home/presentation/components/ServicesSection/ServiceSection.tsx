@@ -23,11 +23,11 @@ export default function ServiceSection() {
   ];
   return (
     <div
-      className="px-28 bg-black py-40"
+      className="px-28 bg-black lg:py-40 py-20"
       id="services container font-secondary"
     >
       <SectionHeader sectionName="services" />
-      <h1 className="text-5xl font-extrabold font-primary text-beige text-center mb-72">
+      <h1 className="lg:text-5xl text-2xl font-extrabold font-primary text-beige text-center lg:mb-72 mb-10">
         Refine Your Digital Presence:
         <span className="text-orange"> Web Design & SEO Specializations</span>
       </h1>

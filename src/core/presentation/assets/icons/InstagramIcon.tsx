@@ -1,10 +1,9 @@
 export default function InstagramIcon() {
   return (
-    <div className="p-2 rounded-full bg-orange w-fit">
+    <div className="lg:p-2 p-1 rounded-full bg-orange w-fit">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        className="lg:w-6 lg:h-6 w-4 h-4"
         viewBox="0 0 24 24"
         fill="none"
       >

@@ -4,4 +4,5 @@ export default interface PricingEntity{
     subTitle: string,
     features: Array<String>,
     variant?: 'orange' | 'white',
+    height?: 'primary' | 'secondary',
 }

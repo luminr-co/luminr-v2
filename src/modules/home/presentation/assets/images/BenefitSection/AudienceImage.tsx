@@ -1,7 +1,7 @@
 export default function AudienceImage() {
   return (
     <svg
-      className="h-full"
+      className="lg:h-80 w-52 lg:w-auto"
       viewBox="0 0 377 350"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

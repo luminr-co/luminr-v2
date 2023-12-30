@@ -6,7 +6,7 @@ export default function SeoServiceImage() {
       viewBox="0 0 699 350"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-60"
+      className="lg:h-60 lg:w-auto w-72"
     >
       <mask
         id="mask0_893_165"

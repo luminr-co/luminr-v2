@@ -15,13 +15,13 @@ export default function FaqComponent({ faq }: Props) {
   };
 
   return (
-    <div className="border-4 border-beige rounded-xl py-6 px-8 gap-5">
+    <div className="lg:border-4 border-2 border-beige rounded-xl py-6 px-8 gap-5">
       <div className="flex flex-row justify-between items-center">
-        <p className="text-beige text-2xl font-normal">{faq.question}</p>
+        <p className="text-beige lg:text-2xl text-base font-normal">{faq.question}</p>
         <button
           onClick={handleAnswerVisibility}
           className={twMerge(
-            "bg-beige p-2 rounded-full w-fit ml-1",
+            "bg-beige lg:p-2 p-1 rounded-full w-fit ml-1 ",
             isAnswerVisible ? "rotate-45" : ""
           )}
         >
@@ -29,7 +29,7 @@ export default function FaqComponent({ faq }: Props) {
         </button>
       </div>
       {isAnswerVisible && (
-        <p className="text-2xl font-normal text-gray mt-4">{faq.answer}</p>
+        <p className="lg:text-2xl text-base font-normal text-gray mt-4">{faq.answer}</p>
       )}
     </div>
   );

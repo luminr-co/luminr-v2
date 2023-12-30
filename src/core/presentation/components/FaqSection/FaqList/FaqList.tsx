@@ -6,7 +6,7 @@ interface Props {
 }
 export default function FaqList({ faqList }: Props) {
   return (
-    <div className="flex flex-col gap-6 px-72">
+    <div className="flex flex-col lg:gap-6 gap-4 lg:px-72 px-6">
       {faqList.map((faq) => (
         <FaqComponent faq={faq} />
       ))}

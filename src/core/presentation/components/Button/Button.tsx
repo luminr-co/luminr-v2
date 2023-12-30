@@ -17,7 +17,7 @@ export default function Button({
   className,
 }: ButtonProps) {
   let classname =
-    "py-5 px-5 rounded-lg text-lg font-medium font-secondary text-beige cursor-pointer h-fit w-fit container transition-colors";
+    "py-5 lg:px-5 px-6 rounded-lg text-lg font-medium font-secondary text-beige cursor-pointer h-fit w-fit container transition-colors";
   return (
     <>
       {variant == "orange" && (

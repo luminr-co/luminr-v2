@@ -1,8 +1,7 @@
 export default function Illustration() {
   return (
     <svg
-      width="213"
-      height="181"
+      className="lg:w-56 hidden lg:inline-block"
       viewBox="0 0 213 181"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

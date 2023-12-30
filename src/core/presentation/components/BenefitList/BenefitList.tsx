@@ -1,5 +1,5 @@
-import { ServiceEntity } from "../../../../../../core/domain/entities/ServiceEntity";
-import { BenefitCard } from "../BenefitCard";
+import { ServiceEntity } from "../../../domain/entities/ServiceEntity";
+import { BenefitCard } from "./BenefitCard";
 
 interface Props {
   benefits: ServiceEntity[];
@@ -7,7 +7,7 @@ interface Props {
 
 export default function BenefitList({ benefits }: Props) {
   return (
-    <div className="flex lg:flex-row flex-col justify-between items-start">
+    <div className="flex lg:flex-row flex-col justify-between lg:items-start items-center gap-14 lg:gap-0">
       {benefits.map((benefit) => (
         <BenefitCard benefit={benefit} />
       ))}

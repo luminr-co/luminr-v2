@@ -54,9 +54,9 @@ export default function WorkSection() {
   ];
 
   return (
-    <section className=" pt-32" id="work">
+    <section className=" lg:pt-32" id="work">
       <SectionHeader sectionName="work" />
-      <h1 className="text-5xl font-extrabold font-primary text-beige text-center mb-9">
+      <h1 className="lg:text-5xl text-2xl px-12 lg:px-0 font-extrabold font-primary text-beige text-center mb-9">
         Some Brands We've Transformed Digitally
       </h1>
       <ToggleButton />

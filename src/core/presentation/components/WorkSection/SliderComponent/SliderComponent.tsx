@@ -6,7 +6,7 @@ interface Props {
 
 export default function ({ image }: Props) {
   return (
-    <div className="bg-orange h-[39.063rem] rounded-3xl">
+    <div className="bg-orange lg:h-[39.063rem] h-80 rounded-3xl">
       <img src={image.image} />
     </div>
   );

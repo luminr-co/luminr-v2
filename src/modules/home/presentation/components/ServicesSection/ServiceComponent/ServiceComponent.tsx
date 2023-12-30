@@ -11,20 +11,22 @@ export default function ServiceComponent({ service }: ServiceComponentProps) {
     <>
       <section
         className={twMerge(
-          " text-beige flex flex-row items-center max-w-full justify-between",
-          service.variant == "imgLeft" && "flex-row-reverse gap-28"
+          " text-beige flex lg:flex-row flex-col-reverse items-center max-w-full justify-between gap-6 lg:gap-0",
+          service.variant == "imgLeft" && "lg:flex-row-reverse lg:gap-28"
         )}
       >
-        <div className="flex flex-col gap-6">
-            <div className="">
-          <h2 className="text-5xl font-extrabold font-primary mb-2">
-            {service.title}
-          </h2>
-          <p className="font-secondary text-2xl font-normal ">
-            {service.description}
-          </p>
+        <div className="flex flex-col lg:gap-6 gap-4 items-center lg:items-start">
+          <div className="">
+            <h2 className="lg:text-5xl text-xl font-extrabold font-primary lg:mb-2 mb-4 text-center lg:text-left">
+              {service.title}
+            </h2>
+            <p className="font-secondary lg:text-2xl text-base font-normal text-center lg:text-left">
+              {service.description}
+            </p>
           </div>
-          <Button className="py-4 px-8">Learn More</Button>
+          <Button className=" py-4 px-8 text-sm lg:text-2xl">
+            Learn More
+          </Button>
         </div>
         <div className="">{service.image}</div>
       </section>

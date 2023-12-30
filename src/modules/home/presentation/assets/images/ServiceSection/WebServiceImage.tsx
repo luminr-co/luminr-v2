@@ -7,7 +7,7 @@ export default function WebServiceImage() {
       viewBox="0 0 869 467"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-80"
+      className="lg:h-80 w-72 lg:w-auto"
     
     >
       <g clip-path="url(#clip0_894_167)">
