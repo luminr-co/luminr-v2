@@ -36,7 +36,7 @@ export default function PricingPlansWeb() {
   return (
     <>
       <div
-        className="flex lg:flex-row flex-col lg:gap-11 gap-14 justify-center items-center mx-6 lg:mx-8 "
+        className="flex lg:flex-row flex-col lg:gap-11 gap-14 justify-center items-center mx-6 lg:mx-8 items-stretch"
         id="packages"
       >
         {pricingPlans.map((pricing) => (
