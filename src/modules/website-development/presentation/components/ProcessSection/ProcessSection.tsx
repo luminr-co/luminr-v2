@@ -62,7 +62,7 @@ export default function ProcessSection() {
       </h1>
       <div className="flex flex-row gap-14 items-center">
         <div className="hidden lg:inline-block">
-        <NumberingSection />
+          <NumberingSection />
         </div>
         <div className="flex justify-center">
           <ProcessList processes={processlist} />

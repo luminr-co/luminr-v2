@@ -22,10 +22,12 @@ export default function NavbarList({onClose}:Props) {
 
   const navigateToWebsitePage = () => {
     navigate("/website-development");
+    close();
   };
 
   const navigateToSeoPage = () => {
     navigate("/seo");
+    close();
   };
 
 
@@ -121,12 +123,14 @@ export default function NavbarList({onClose}:Props) {
       >
         <a href="#faq"> FAQ</a>
       </li>
+      <a href="#call">
       <Button className="px-6 py-5 mt-4 flex flex-row gap-3 text-sm lg:hidden ">
         <span>
           <CallIcon />
         </span>
         <p>Hop on a Call</p>
       </Button>
+      </a>
     </nav>
   );
 }

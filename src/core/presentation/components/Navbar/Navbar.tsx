@@ -23,6 +23,10 @@ export default function Navbar() {
     navigate("");
   };
 
+  const handleHopOnACall = () => {
+    navigate("#call");
+  };
+
   return (
     <>
       <nav className="container rounded-full py-4 lg:px-20 px-16 bg-black shadow-2xl flex flex-row justify-between items-center fixed top-6 z-50 w-96 lg:w-full left-1/2 -translate-x-1/2">
@@ -41,12 +45,14 @@ export default function Navbar() {
         <div className="hidden lg:inline-block top-0 bg-black p-12 lg:p-0 left-0 ">
           <NavbarList />
         </div>
-        <Button className="lg:flex flex-row justify-center gap-3 items-center hidden ">
-          <span>
-            <CallIcon />
-          </span>
-          <p>Hop on a Call</p>
-        </Button>
+        <a href="#call">
+          <Button className="lg:flex flex-row justify-center gap-3 items-center hidden ">
+            <span>
+              <CallIcon />
+            </span>
+            <p>Hop on a Call</p>
+          </Button>
+        </a>
         <button className="lg:hidden" onClick={handleMenuIcon}>
           <MenuIcon />
         </button>
