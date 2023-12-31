@@ -44,13 +44,13 @@ export default function ToggleButton({ package: isPackage }: Props) {
       </div>
 
       {isPackage && isActiveWebsite && (
-        <div className="mt-16">
+        <div className="mt-16 ">
           <PricingPlansWeb />
         </div>
       )}
 
       {isPackage && isActiveSEO && (
-        <div className="mt-16 mx-20">
+        <div className="mt-16 lg:mx-20 mx-6">
           <PricingPlanSeo />
         </div>
       )}
