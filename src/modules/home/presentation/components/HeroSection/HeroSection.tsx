@@ -19,16 +19,17 @@ export default function HeroSection() {
               </p>
             </div>
             <a href="#call">
-            <Button className="flex flex-row justify-center gap-3 items-center">
-              <span>
-                <CallIcon />
-              </span>
-              <p className="text-sm lg:text-xl">Hop on a Call</p>
-            </Button>
+              <Button className="flex flex-row justify-center gap-3 items-center">
+                <span>
+                  <CallIcon />
+                </span>
+                <p className="text-sm lg:text-xl">Hop on a Call</p>
+              </Button>
             </a>
           </div>
         </div>
-        <div className="w-full bg-black h-full flex items-center basis-1/2 z-20 lg:px-10 px-20">
+        <div className="w-full bg-black h-full flex items-center basis-1/2 z-20 lg:px-10 px-20 lg:pt-32">
+
           <HeroImage />
         </div>
       </div>

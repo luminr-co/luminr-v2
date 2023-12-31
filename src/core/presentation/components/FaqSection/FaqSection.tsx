@@ -38,7 +38,7 @@ export default function FaqSection() {
     },
   ];
   return (
-    <section className="lg:pt-52 pt-24">
+    <section className="lg:pt-52 pt-24 container mx-auto">
       <SectionHeader sectionName="faq" />
       <h1
         className="lg:text-5xl text-2xl font-extrabold font-primary text-beige text-center lg:mb-16 mb-10"

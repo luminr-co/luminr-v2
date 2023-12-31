@@ -1,7 +1,7 @@
 export default function CoreBusinessImage() {
   return (
     <svg
-     className="lg:h-80 w-52 lg:w-auto"
+     className="lg:h-80 w-52 xl:w-auto"
       viewBox="0 0 380 354"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

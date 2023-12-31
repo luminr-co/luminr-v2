@@ -28,7 +28,7 @@ export default function BenefitSection() {
   ];
 
   return (
-    <div className="lg:px-40 px-5 lg:pt-32 mb-32" id="benefits">
+    <div className="xl:px-40 px-5 lg:pt-32 mb-32 container mx-auto" id="benefits">
       <SectionHeader sectionName="benefits" />
       <h1 className="lg:text-5xl text-2xl font-extrabold font-primary text-beige text-center lg:mb-4 mb-10 px-24">
         <span className="text-orange"> Skyrocket Your Business: </span>

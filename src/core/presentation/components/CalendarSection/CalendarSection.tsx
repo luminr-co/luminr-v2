@@ -2,7 +2,7 @@ import { CalendarComponent } from "./Calendly";
 
 export default function CalendarSection() {
   return (
-    <section className="mb-24 lg:mb-40">
+    <section className="mb-24 lg:mb-40 container mx-auto">
       <h1
         className="Calendar lg:text-5xl text-2xl font-extrabold font-primary text-beige text-center mb-16 lg:pt-64 pt-24 "
         id="call"
