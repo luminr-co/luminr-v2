@@ -1,9 +1,9 @@
-import { ServiceEntity } from "../../../../../core/domain/entities/ServiceEntity";
+import { BenefitList } from "@/core/presentation/components/BenefitList";
 import AudienceImage from "../../assets/images/BenefitSection/AudienceImage";
 import BrandInfluence from "../../assets/images/BenefitSection/BrandInfluence";
 import CoreBusinessImage from "../../assets/images/BenefitSection/CoreBusinessImage";
 import SectionHeader from "../SectionHeader/SectionHeader";
-import BenefitList from "../../../../../core/presentation/components/BenefitList/BenefitList";
+import { ServiceEntity } from "@/core/domain/entities/ServiceEntity";
 
 export default function BenefitSection() {
   const benefits: ServiceEntity[] = [
@@ -28,11 +28,14 @@ export default function BenefitSection() {
   ];
 
   return (
-    <div className="xl:px-40 px-5 lg:pt-32 mb-32 container mx-auto" id="benefits">
+    <div
+      className="xl:px-40 px-5 lg:pt-32 mb-32 container mx-auto"
+      id="benefits"
+    >
       <SectionHeader sectionName="benefits" />
       <h1 className="lg:text-5xl text-2xl font-extrabold font-primary text-beige text-center lg:mb-4 mb-10 px-24">
         <span className="text-orange"> Skyrocket Your Business: </span>
-        Let's Craft Your Digital Success Together
+        Let&apos;s Craft Your Digital Success Together
       </h1>
       <BenefitList benefits={benefits} />
     </div>

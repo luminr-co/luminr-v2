@@ -1,12 +1,13 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ["index.html", "src/**/*.{js,jsx,ts,tsx}"],
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       container: {
         screens: {
-          "2xl": "2000px"
-        }
+          "2xl": "2000px",
+        },
       },
       fontFamily: {
         primary: ["var(--font-monoserrat)"],
@@ -22,3 +23,4 @@ export default {
   },
   plugins: [],
 };
+export default config;

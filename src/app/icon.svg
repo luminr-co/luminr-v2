@@ -1,14 +1,13 @@
-export default function LogoSmall() {
-  return (
-    <svg
+<svg
       xmlns="http://www.w3.org/2000/svg"
-      className="w-8"
+      width="33"
+      height="48"
       viewBox="0 0 33 48"
       fill="none"
     >
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
         d="M26.1839 22.1159C27.2236 20.3707 27.8209 18.3312 27.8209 16.1521C27.8209 9.70765 22.5966 4.48337 16.1521 4.48337C9.70765 4.48337 4.48337 9.70765 4.48337 16.1521C4.48337 18.7878 5.35724 21.2195 6.83106 23.173L4.45418 27.2899C1.69424 24.392 0 20.4699 0 16.1521C0 7.23155 7.23156 0 16.1521 0C25.0727 0 32.3043 7.23155 32.3043 16.1521C32.3043 20.0361 30.9334 23.5998 28.6492 26.386L26.1839 22.1159Z"
         fill="#DB6332"
       />
@@ -17,5 +16,3 @@ export default function LogoSmall() {
         fill="#F2F3D9"
       />
     </svg>
-  );
-}

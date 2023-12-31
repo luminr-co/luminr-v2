@@ -8,8 +8,8 @@ interface Props {
 export default function BenefitList({ benefits }: Props) {
   return (
     <div className="flex lg:flex-row flex-col justify-between lg:items-start items-center gap-14 lg:gap-0">
-      {benefits.map((benefit) => (
-        <BenefitCard benefit={benefit} />
+      {benefits.map((benefit, i) => (
+        <BenefitCard benefit={benefit} key={i} />
       ))}
     </div>
   );

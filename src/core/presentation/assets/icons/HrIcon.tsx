@@ -7,7 +7,7 @@ export default function HrIcon() {
       viewBox="0 0 16 2"
       fill="none"
     >
-      <path d="M0 1H16" stroke="#F2F3D9" stroke-width="2" />
+      <path d="M0 1H16" stroke="#F2F3D9" strokeWidth="2" />
     </svg>
   );
 }

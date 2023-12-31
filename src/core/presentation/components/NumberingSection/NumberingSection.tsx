@@ -8,8 +8,8 @@ interface NumberingSectionProp {
 export default function NumberingSection({ numbers }: NumberingSectionProp) {
   return (
     <div>
-      {numbers.map((number) => (
-        <NumberingComponent number={number} />
+      {numbers.map((number, i) => (
+        <NumberingComponent number={number} key={i} />
       ))}
     </div>
   );

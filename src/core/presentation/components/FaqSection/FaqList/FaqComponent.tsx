@@ -1,7 +1,10 @@
+"use client";
 import { useState } from "react";
 import { FaqEntity } from "../../../../domain/entities/FaqEntity";
 import AddIcon from "../../../assets/icons/AddIcon";
 import { twMerge } from "tailwind-merge";
+import { AnimatePresence, motion } from "framer-motion";
+
 
 interface Props {
   faq: FaqEntity;
@@ -17,7 +20,9 @@ export default function FaqComponent({ faq }: Props) {
   return (
     <div className="lg:border-4 border-2 border-beige rounded-xl py-6 px-8 gap-5">
       <div className="flex flex-row justify-between items-center">
-        <p className="text-beige lg:text-2xl text-base font-normal">{faq.question}</p>
+        <p className="text-beige lg:text-2xl text-base font-normal">
+          {faq.question}
+        </p>
         <button
           onClick={handleAnswerVisibility}
           className={twMerge(
@@ -28,9 +33,13 @@ export default function FaqComponent({ faq }: Props) {
           <AddIcon />
         </button>
       </div>
-      {isAnswerVisible && (
-        <p className="lg:text-2xl text-base font-normal text-gray mt-4">{faq.answer}</p>
-      )}
+      <AnimatePresence>
+        {isAnswerVisible && (
+          <motion.p className="lg:text-2xl text-base font-normal text-gray mt-4">
+            {faq.answer}
+          </motion.p>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

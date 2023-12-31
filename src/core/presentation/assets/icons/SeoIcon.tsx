@@ -14,20 +14,20 @@ export default function SeoIcon() {
       <path
         d="M29.3333 16C29.3333 8.63616 23.3637 2.66663 16 2.66663C8.63619 2.66663 2.66666 8.63616 2.66666 16C2.66666 23.3637 8.63619 29.3333 16 29.3333"
         stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linecap="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
       />
       <path
         d="M26.6667 7.59861C25.4204 7.68844 23.8241 8.17095 22.7172 9.60365C20.718 12.1914 18.7187 12.4074 17.3859 11.5448C15.3865 10.2509 17.0667 8.15511 14.7201 7.01616C13.1908 6.27385 12.9776 4.25389 13.8288 2.66663"
         stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
       />
       <path
         d="M2.66666 14.6666C3.68332 15.5494 5.10727 16.3576 6.78498 16.3576C10.2512 16.3576 10.9445 17.0198 10.9445 19.669C10.9445 22.3182 10.9445 22.3182 11.6377 24.305C12.0887 25.5974 12.2463 26.8898 11.3475 28"
         stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
       />
     </svg>
   );

@@ -1,5 +1,5 @@
-import PricingComponent from "../../../../../core/presentation/components/PricingSection/PricingComponent/PricingComponent";
-import PricingEntity from "../../../../../core/domain/entities/PricingEntity";
+import PricingEntity from "@/core/domain/entities/PricingEntity";
+import PricingComponent from "@/core/presentation/components/PricingSection/PricingComponent/PricingComponent";
 
 export default function PricingPlansWeb() {
   const pricingPlans: PricingEntity[] = [
@@ -36,11 +36,11 @@ export default function PricingPlansWeb() {
   return (
     <>
       <div
-        className="flex lg:flex-row flex-col lg:gap-11 gap-14 justify-center items-center mx-6 lg:mx-8 items-stretch"
+        className="flex lg:flex-row flex-col lg:gap-11 gap-14 justify-center mx-6 lg:mx-8 items-stretch"
         id="packages"
       >
-        {pricingPlans.map((pricing) => (
-          <PricingComponent pricing={pricing} />
+        {pricingPlans.map((pricing, i) => (
+          <PricingComponent pricing={pricing} key={i} />
         ))}
       </div>
     </>

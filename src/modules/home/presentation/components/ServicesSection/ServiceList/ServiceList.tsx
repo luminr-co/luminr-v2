@@ -1,4 +1,4 @@
-import { ServiceEntity } from "../../../../../../core/domain/entities/ServiceEntity"
+import { ServiceEntity } from "@/core/domain/entities/ServiceEntity";
 import { ServiceComponent } from "../ServiceComponent";
 
 interface Props{
@@ -8,8 +8,8 @@ interface Props{
 export default function ServiceList({services}: Props) {
   return (
     <div className="flex flex-col lg:gap-80 gap-12">
-        {services.map((service)=>(
-            <ServiceComponent service={service}/>
+        {services.map((service, i)=>(
+            <ServiceComponent service={service} key={i} />
         ))}
     </div>
   )

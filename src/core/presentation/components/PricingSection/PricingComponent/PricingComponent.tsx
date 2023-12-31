@@ -36,9 +36,9 @@ export default function PricingComponent({ pricing }: Props) {
           <hr className="h-px lg:mb-8 mb-5 mt-4 bg-gray border-0 bg-opacity-20"></hr>
         </div>
 
-      <div className="flex flex-col gap-6 min-h-80">
-          {pricing.features.map((feature) => (
-            <div className="flex flex-row gap-2">
+        <div className="flex flex-col gap-6 min-h-80 flex-1">
+          {pricing.features.map((feature, i) => (
+            <div className="flex flex-row gap-2" key={i}>
               <span>
                 <TickIcon />
               </span>
@@ -46,7 +46,9 @@ export default function PricingComponent({ pricing }: Props) {
             </div>
           ))}
         </div>
-        <Button className="w-full text-xl px-4 py-3 lg:py-5 lg:px-5 ">Explore Plan</Button>
+        <Button className="w-full text-xl px-4 py-3 lg:py-5 lg:px-5 ">
+          Explore Plan
+        </Button>
       </div>
     </>
   );

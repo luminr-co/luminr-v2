@@ -9,8 +9,8 @@ export default function ProcessList({ processes }: IProcessList) {
   return (
     <>
       <section className="flex flex-col lg:gap-12 gap-4 justify-center items-center">
-        {processes.map((process) => (
-          <ProcessComponent process={process} />
+        {processes.map((process, i) => (
+          <ProcessComponent process={process} key={i} />
         ))}
       </section>
     </>
