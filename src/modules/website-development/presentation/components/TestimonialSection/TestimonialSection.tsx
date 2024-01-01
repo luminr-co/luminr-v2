@@ -1,6 +1,6 @@
+import { FeedbackList } from "@/core/presentation/components/Feedbacks";
 import { FeedbackEntity } from "../../../../../core/domain/entities/FeedbackEntity";
-import { FeedbackList } from "../../../../../core/presentation/components/WorkSection/Feedbacks";
-import SectionHeader from "../../../../home/presentation/components/SectionHeader/SectionHeader";
+import { SectionContainer } from "@/core/presentation/components/SectionContainer";
 
 export default function TestimonialSection() {
   const feedbacks: FeedbackEntity[] = [
@@ -27,14 +27,12 @@ export default function TestimonialSection() {
     },
   ];
   return (
-    <section className="lg:pt-52 pt-20">
-      <SectionHeader sectionName="testimonials" />
-      <h1 className="lg:text-5xl text-2xl px-5 lg:px-0 font-extrabold text-beige text-center lg:mb-40 mb-10">
-        Trusted by Founders and Industry Leaders
-      </h1>
-      <div>
-        <FeedbackList variant="secondary" feedbacks={feedbacks} />
-      </div>
-    </section>
+    <SectionContainer
+      id="testimonials"
+      sectionName="TESTIMONIALS"
+      sectionTitle={<>Trusted by Founders and Industry Leaders</>}
+    >
+      <FeedbackList variant="secondary" feedbacks={feedbacks} />
+    </SectionContainer>
   );
 }

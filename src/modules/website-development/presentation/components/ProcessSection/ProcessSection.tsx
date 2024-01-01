@@ -1,8 +1,8 @@
 import { ProcessEntity } from "../../../../../core/domain/entities/ProcessEntity";
 import { ProcessList } from "../../../../../core/presentation/components/ProcessList";
 import SectionHeader from "../../../../home/presentation/components/SectionHeader/SectionHeader";
-import ContentWriting from "../../../../../core/presentation/assets/images/ProcessSection/ContentWriting";
-import Development from "../../../../../core/presentation/assets/images/ProcessSection/Development";
+import ContentWriting from "../../../../../core/presentation/assets/images/process/ContentWriting";
+import Development from "../../../../../core/presentation/assets/images/process/Development";
 import DiscoveryCall from "../../assets/images/ProcessSection/DiscoveryCall";
 import HandOff from "../../assets/images/ProcessSection/HandOff";
 import HighFidelity from "../../assets/images/ProcessSection/HighFidelity";

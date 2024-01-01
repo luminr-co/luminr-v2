@@ -1,11 +1,12 @@
-import { CalendarSection } from "../../../core/presentation/components/CalendarSection";
-import { FaqSection } from "../../../core/presentation/components/FaqSection";
 import { Footer } from "../../../core/presentation/components/Footer";
-import PricingSection from "../../../core/presentation/components/PricingSection/PricingSection";
-import { WorkSection } from "../../../core/presentation/components/WorkSection";
 import { BenefitSection } from "./components/BenefitsSection";
 import { HeroSection } from "./components/HeroSection";
-import ServiceSection from "./components/ServicesSection/ServiceSection";
+import { ServiceSection } from "./components/ServicesSection";
+import { TestimonialSection } from "./components/TestimonialSection";
+import { WorkSection } from "./components/WorkSection";
+import { FAQSection } from "./components/FAQSection";
+import { PricingSection } from "./components/PricingSection";
+import { CalendarSection } from "./components/CalendarSection";
 
 export default function HomePage() {
   return (
@@ -14,8 +15,9 @@ export default function HomePage() {
       <ServiceSection />
       <BenefitSection />
       <WorkSection />
+      <TestimonialSection />
       <PricingSection />
-      <FaqSection />
+      <FAQSection />
       <CalendarSection />
       <Footer />
     </div>

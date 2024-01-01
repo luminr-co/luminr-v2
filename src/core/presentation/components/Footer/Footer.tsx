@@ -3,13 +3,13 @@ import InstagramIcon from "../../assets/icons/InstagramIcon";
 import LinkedinIcon from "../../assets/icons/LinkedinIcon";
 import LocationIcon from "../../assets/icons/LocationIcon";
 import MessageIcon from "../../assets/icons/MessageIcon";
-import Illustration from "../../assets/images/Footer/Illustration";
-import Logo from "../../assets/images/Footer/Logo";
+import Illustration from "../../assets/images/footer/Illustration";
+import Logo from "../../assets/images/footer/Logo";
 
 export default function Footer() {
   return (
-    <div className="container mx-auto">
-      <footer className="bg-beige rounded-3xl flex flex-col font-secondary lg:text-2xl text-base font-normal text-black lg:py-16 p-12 lg:px-14 gap-20 justify-between lg:mx-28 mx-6">
+    <div className="container mx-auto px-4">
+      <footer className="bg-beige rounded-3xl flex flex-col font-secondary lg:text-2xl text-base font-normal text-black lg:py-16 p-12 lg:px-14 gap-20 justify-between ">
         <div className="flex flex-row gap-8 mx-auto">
           <Logo />
           <Illustration />

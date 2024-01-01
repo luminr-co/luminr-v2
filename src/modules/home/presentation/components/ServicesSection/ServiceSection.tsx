@@ -1,8 +1,8 @@
-import { ServiceEntity } from "../../../../../core/domain/entities/ServiceEntity";
+import { SectionContainer } from "@/core/presentation/components/SectionContainer";
 import SeoServiceImage from "../../assets/images/ServiceSection/SeoServiceImage";
 import WebServiceImage from "../../assets/images/ServiceSection/WebServiceImage";
-import SectionHeader from "../SectionHeader/SectionHeader";
 import { ServiceList } from "./ServiceList";
+import { ServiceEntity } from "@/core/domain/entities/ServiceEntity";
 
 export default function ServiceSection() {
   const services: ServiceEntity[] = [
@@ -22,16 +22,17 @@ export default function ServiceSection() {
     },
   ];
   return (
-    <div
-      className="lg:px-28 px-5 bg-black lg:py-40 py-20  container font-secondary mx-auto"
+    <SectionContainer
       id="services"
+      sectionName="SERVICES"
+      sectionTitle={
+        <>
+          Refine Your Digital Presence:
+          <span className="text-orange"> Web Design & SEO Specializations</span>
+        </>
+      }
     >
-      <SectionHeader sectionName="services" />
-      <h1 className="lg:text-5xl text-2xl font-extrabold font-primary text-beige text-center lg:mb-72 mb-10">
-        Refine Your Digital Presence:
-        <span className="text-orange"> Web Design & SEO Specializations</span>
-      </h1>
       <ServiceList services={services} />
-    </div>
+    </SectionContainer>
   );
 }

@@ -1,4 +1,4 @@
-import Sliders from "../../../../../core/presentation/components/WorkSection/SliderComponent/Sliders";
+import Sliders from "../../../../../core/presentation/components/WorkSlider/SliderComponent/Sliders";
 import { SliderEntity } from "../../../../../core/domain/entities/SliderEntity";
 import SectionHeader from "../../../../home/presentation/components/SectionHeader/SectionHeader";
 

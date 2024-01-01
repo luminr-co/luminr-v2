@@ -4,13 +4,13 @@ const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
-      container: {
-        screens: {
-          "2xl": "2000px",
-        },
-      },
+      // container: {
+      //   screens: {
+      //     "2xl": "2000px",
+      //   },
+      // },
       fontFamily: {
-        primary: ["var(--font-monoserrat)"],
+        primary: ["var(--font-mons)"],
         secondary: ["var( --font-kanit)"],
       },
       colors: {

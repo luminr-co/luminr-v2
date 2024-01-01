@@ -1,5 +1,5 @@
 import PricingEntity from "../../../../../core/domain/entities/PricingEntity";
-import PricingComponent from "../../../../../core/presentation/components/PricingSection/PricingComponent/PricingComponent";
+import PricingComponent from "../../../../../core/presentation/components/PricingComponent/PricingComponent";
 
 export default function PricingPlanSeo() {
     const starter: PricingEntity = {
