@@ -12,6 +12,7 @@ export default function ServiceSection() {
         "Elevate your brand with captivating landing and product pages. Our Web Design focuses on seamless user experiences, creating visually stunning sites for enhanced engagement.",
       image: <WebServiceImage />,
       variant: "imgRight",
+      link: "/website-development"
     },
     {
       title: "SEO for Shopify Stores",
@@ -19,6 +20,7 @@ export default function ServiceSection() {
         "Strategies tailored to the unique needs of e-commerce stores and optimize for higher search rankings, ensuring your products shine. ",
       image: <SeoServiceImage />,
       variant: "imgLeft",
+      link: "/seo"
     },
   ];
   return (

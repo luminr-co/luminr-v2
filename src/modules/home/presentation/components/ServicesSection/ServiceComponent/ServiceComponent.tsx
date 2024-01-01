@@ -1,6 +1,7 @@
 import { twMerge } from "tailwind-merge";
-import { Button } from "../../../../../../core/presentation/components/Button";
-import { ServiceEntity } from "../../../../../../core/domain/entities/ServiceEntity";
+import Link from "next/link";
+import { ServiceEntity } from "@/core/domain/entities/ServiceEntity";
+import { Button } from "@/core/presentation/components/Button";
 
 export interface ServiceComponentProps {
   service: ServiceEntity;
@@ -24,7 +25,11 @@ export default function ServiceComponent({ service }: ServiceComponentProps) {
               {service.description}
             </p>
           </div>
-          <Button className=" py-4 px-8 text-sm lg:text-2xl">Learn More</Button>
+          <Link href={service.link ?? ""}>
+            <Button className=" py-4 px-8 text-sm lg:text-2xl">
+              Learn More
+            </Button>
+          </Link>
         </div>
         <div className="">{service.image}</div>
       </section>
