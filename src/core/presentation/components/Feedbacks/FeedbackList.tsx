@@ -29,7 +29,7 @@ export default function FeedbackList({ variant, feedbacks }: Props) {
           className="lg:overflow-x-hidden w-full lg:px-24 px-5"
           id="testimonials"
         >
-          <div className="flex lg:flex-row flex-col">
+          <div className="flex lg:flex-row flex-col gap-4">
             {feedbacks.map((feedback, i) => (
               <FeedbackComponent
                 feedbackCard={feedback}

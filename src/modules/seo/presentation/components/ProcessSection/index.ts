@@ -1,1 +1,1 @@
-export {default as ProcessSection} from './ProcessSection'
+export { default as ProcessSection } from "./ProcessSection";

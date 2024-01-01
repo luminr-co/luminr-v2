@@ -1,13 +1,14 @@
-import DiscoveryCall from "../../../../website-development/presentation/assets/images/ProcessSection/DiscoveryCall";
-import Onboarding from "../../../../website-development/presentation/assets/images/ProcessSection/Onboarding";
-import OffPage from "../../assets/images/ProcessSection/OffPage";
-import { ProcessEntity } from "../../../../../core/domain/entities/ProcessEntity";
-import OnPage from "../../assets/images/ProcessSection/OnPage";
+import { ProcessEntity } from "@/core/domain/entities/ProcessEntity";
+import { SectionContainer } from "@/core/presentation/components/SectionContainer";
+import DiscoveryCall from "@/modules/website-development/presentation/assets/images/ProcessSection/DiscoveryCall";
+import Onboarding from "@/modules/website-development/presentation/assets/images/ProcessSection/Onboarding";
 import Strategy from "../../assets/images/ProcessSection/Strategy";
 import Technical from "../../assets/images/ProcessSection/Technical";
-import SectionHeader from "../../../../home/presentation/components/SectionHeader/SectionHeader";
+import OnPage from "../../assets/images/ProcessSection/OnPage";
+import OffPage from "../../assets/images/ProcessSection/OffPage";
+import { ProcessList } from "@/core/presentation/components/ProcessList";
 import { NumberingSection } from "../NumberingSection";
-import { ProcessList } from "../../../../../core/presentation/components/ProcessList";
+
 export default function ProcessSection() {
   const processlist: ProcessEntity[] = [
     {
@@ -26,47 +27,50 @@ export default function ProcessSection() {
     },
     {
       image: <Strategy />,
-      title: "Content Writing and Wireframing",
+      title: "Strategy and Planning",
       description:
-        "We gather assets to help clear how you want the website’s design direction to be like. We also create low to mid fidelity wireframes. We have a DIY/DWY/DFY approach when it comes to content creation.",
-      time: "30 minutes",
+        "We provide a master plan tailored to elevate your website's presence in search engines. Our proven methodologies will navigate your brand to new heights, ensuring sustained growth and dominance in your niche.",
+      time: "2-3 Days (After Kick-Off Call)",
     },
     {
       image: <Technical />,
-      title: "High Fidelity Design",
+      title: "Technical SEO",
       description:
-        "High Fidelity Designs are created that communicate your business’s value and mission.",
-      time: "30 minutes",
+        "We optimize every digital technicality propelling your website to the top ranks and ensure it stays there, bringing in organic traffic and skyrocketing your business to new heights.",
+      time: "Ongoing",
     },
     {
       image: <OnPage />,
-      title: "Development",
+      title: "On-Page Optimization",
       description:
-        "High Fidelity Designs are converted into working product that you can show off to the world.",
-      time: "30 minutes",
+        "From compelling content to seamless user journeys, we transform your web pages into conversion powerhouses, ensuring every click translates into meaningful engagement and revenue.",
+      time: "Ongoing",
     },
     {
       image: <OffPage />,
-      title: "Hand Off",
-      description: "We give yo",
-      time: "30 minutes",
+      title: "Off Page Optimization",
+      description:
+        "We strategize authoritative link-building techniques to establish your brand as an industry leader, cultivating a presence that attracts, captivates, and converts your target audience.",
+      time: "Ongoing",
     },
   ];
   return (
-    <section className="lg:px-56 px-6 lg:pt-36 pt-28 max-w-full">
-      <SectionHeader sectionName="process" />
-      <h1 className="lg:text-5xl text-2xl font-extrabold text-beige text-center lg:mb-40 mb-10">
+    <SectionContainer
+      id="process"
+      sectionName="PROCESS"
+      sectionTitle="
         At Luminr, We Have Well Defined Processes to Help You Save Time and
         Focus on Your Business
-      </h1>
+    "
+    >
       <div className="flex flex-row gap-14 items-center">
         <div className="hidden lg:inline-block">
-        <NumberingSection />
+          <NumberingSection />
         </div>
         <div className="flex justify-center">
           <ProcessList processes={processlist} />
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 }

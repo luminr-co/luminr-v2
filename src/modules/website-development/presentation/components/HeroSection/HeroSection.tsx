@@ -1,5 +1,5 @@
-import { Button } from "../../../../../core/presentation/components/Button";
-import CallIcon from "../../../../../core/presentation/assets/icons/CallIcon";
+import CallIcon from "@/core/presentation/assets/icons/CallIcon";
+import { Button } from "@/core/presentation/components/Button";
 
 export default function HeroSection() {
   return (
@@ -8,8 +8,8 @@ export default function HeroSection() {
         Crafting Unique, Pro-Grade Websites for Long-Term Success.
       </h1>
       <p className="font-normal font-secondary lg:text-3xl text-sm text-gray text-center">
-        We Build Business Owners Professional Websites So They Can Save Time and
-        Focus on Their High ROI Activities.{" "}
+        We Build Professional Websites for Products, Services and Startups So
+        They Can Save Time and Focus on Their High ROI Activities.
       </p>
       <Button className="flex flex-row justify-center gap-3 items-center mt-8">
         <span>

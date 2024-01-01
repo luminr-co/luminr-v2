@@ -10,23 +10,31 @@
 //@ts-ignore
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-export default function MyApp() {
+
+interface Props {
+  namespace: string;
+  calllink: string;
+}
+
+export default function MyApp({ namespace, calllink }: Props) {
+  
   useEffect(() => {
     (async function () {
       const cal = await getCalApi();
-      cal.ns["discovery-call"]("ui", {
+      cal.ns[namespace]("ui", {
         styles: { branding: { brandColor: "#DB6332" } },
         hideEventTypeDetails: true,
         layout: "month_view",
       });
     })();
-  }, []);
+  }, [namespace]);
+
   return (
     <>
-      <div className=" h-fit lg:w-full">
+      <div className="h-fit lg:w-full">
         <Cal
-          namespace="discovery-call"
-          calLink="luminr/discovery-call"
+          namespace={namespace}
+          calLink={calllink}
           style={{ width: "100%", height: "100%", overflow: "scroll" }}
           config={{ layout: "month_view" }}
         />

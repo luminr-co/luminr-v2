@@ -1,5 +1,3 @@
-import { CalendarSection } from "../../../core/presentation/components/CalendarSection";
-import { FaqSection } from "../../../core/presentation/components/FaqSection";
 import { Footer } from "../../../core/presentation/components/Footer";
 import { PricingSectionWeb } from "./components/PricingSection";
 import { BenefitSection } from "./components/BenefitSection";
@@ -7,6 +5,8 @@ import { HeroSection } from "./components/HeroSection";
 import { ProcessSection } from "./components/ProcessSection";
 import { TestimonialSection } from "./components/TestimonialSection";
 import { WorkSection } from "./components/WorkSection";
+import { FAQSection } from "./components/FAQSection";
+import { CalendarSection } from "./components/CalendarSection";
 
 export default function WebsitePage() {
   return (
@@ -17,7 +17,7 @@ export default function WebsitePage() {
       <ProcessSection />
       <TestimonialSection />
       <PricingSectionWeb />
-      <FaqSection />
+      <FAQSection />
       <CalendarSection />
       <Footer />
     </div>

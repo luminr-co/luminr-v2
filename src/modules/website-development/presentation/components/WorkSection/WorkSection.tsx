@@ -1,27 +1,23 @@
-import Sliders from "../../../../../core/presentation/components/WorkSlider/SliderComponent/Sliders";
-import { SliderEntity } from "../../../../../core/domain/entities/SliderEntity";
-import SectionHeader from "../../../../home/presentation/components/SectionHeader/SectionHeader";
+import { SliderEntity } from "@/core/domain/entities/SliderEntity";
+
+import tiggImage from "@/core/presentation/assets/images/work/tiggapp.webp";
+import { SectionContainer } from "@/core/presentation/components/SectionContainer";
+import { Slider } from "@/core/presentation/components/Slider";
 
 export default function WorkSection() {
-    const sliders: SliderEntity[] = [
-        {
-          image: "",
-        },
-        {
-          image: "",
-        },
-        {
-          image: "",
-        },
-        {
-          image: "",
-        },
-      ];
-    
+  const works: SliderEntity[] = [
+    {
+      image: tiggImage,
+    },
+  ];
+
   return (
-    <div className="lg:pt-32 pt-10 flex flex-col lg:gap-14 gap-4">
-        <SectionHeader sectionName="work"/>
-       <Sliders sliders={sliders}/> 
-    </div>
-  )
+    <SectionContainer
+      id="work"
+      sectionName="WORK"
+      sectionTitle="Some Brands We've Transformed Digitally"
+    >
+      <Slider sliders={works} />
+    </SectionContainer>
+  );
 }

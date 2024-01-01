@@ -1,29 +1,16 @@
 import { FeedbackList } from "@/core/presentation/components/Feedbacks";
 import { FeedbackEntity } from "../../../../../core/domain/entities/FeedbackEntity";
 import { SectionContainer } from "@/core/presentation/components/SectionContainer";
+import HussianImage from "@/core/presentation/assets/images/feedback/hussian_shekh.webp";
 
 export default function TestimonialSection() {
   const feedbacks: FeedbackEntity[] = [
     {
       feedback:
-        "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ",
-      name: "John Doe",
-      profession: "CEO, Acme Inc.",
-      image: "../../assets/images/WorkSection/Feedback/personImage.jpg",
-    },
-    {
-      feedback:
-        "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ",
-      name: "John Doe",
-      profession: "CEO, Acme Inc.",
-      image: "../../assets/images/WorkSection/Feedback/personImage.jpg",
-    },
-    {
-      feedback:
-        "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ",
-      name: "John Doe",
-      profession: "CEO, Acme Inc.",
-      image: "../../assets/images/WorkSection/Feedback/personImage.jpg",
+        "“Working with Luminr on our landing pages design and development was a game-changer for us. Prayatna and the team not only understood our brand vision but elevated it to new heights. Their creativity, attention to detail, and commitment to excellence set them apart. Highly recommended.”",
+      name: "Hussain Shekh",
+      profession: "CEO, Brand Spark Visuals",
+      image: HussianImage,
     },
   ];
   return (
@@ -32,7 +19,7 @@ export default function TestimonialSection() {
       sectionName="TESTIMONIALS"
       sectionTitle={<>Trusted by Founders and Industry Leaders</>}
     >
-      <FeedbackList variant="secondary" feedbacks={feedbacks} />
+      <FeedbackList variant="primary" feedbacks={feedbacks} />
     </SectionContainer>
   );
 }

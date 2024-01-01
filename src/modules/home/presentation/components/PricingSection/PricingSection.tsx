@@ -1,7 +1,19 @@
+"use client";
 import { SectionContainer } from "@/core/presentation/components/SectionContainer";
-import { ToggleButton } from "@/core/presentation/components/ToggleButton";
+import ServiceToggleButton, {
+  ServiceButtonItem,
+} from "@/core/presentation/components/ServiceToggleButton/ServiceToggleButton";
+import PricingPlanSeo from "@/modules/seo/presentation/components/PricingSection/PricingPlanSeo";
+import PricingPlansWeb from "@/modules/website-development/presentation/components/PricingSection/PricingPlansWeb";
+import { useState } from "react";
 
 export default function PricingSection() {
+  const [active, setActive] = useState<ServiceButtonItem>("WEBSITE");
+
+  const handleToggleClick = (item: ServiceButtonItem) => {
+    setActive(item);
+  };
+
   return (
     <SectionContainer
       id="pricing"
@@ -13,7 +25,12 @@ export default function PricingSection() {
         </>
       }
     >
-      <ToggleButton package={true} />
+      <ServiceToggleButton active={active} onClick={handleToggleClick} />
+
+      <div>
+        {active === "WEBSITE" && <PricingPlansWeb />}
+        {active === "SEO" && <PricingPlanSeo />}
+      </div>
     </SectionContainer>
   );
 }

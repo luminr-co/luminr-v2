@@ -15,7 +15,7 @@ export default function SectionContainer({
   return (
     <>
       <div id={id}></div>
-      <section className="px-5 py-16 container mx-auto">
+      <section className="px-8 py-16 container mx-auto">
         <div>
           <h2 className="lg:text-2xl text-sm font-medium text-gray text-center mb-4 uppercase">
             {sectionName}

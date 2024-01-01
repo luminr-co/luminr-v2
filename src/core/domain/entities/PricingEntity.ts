@@ -1,8 +1,8 @@
-
-export default interface PricingEntity{
-    title: string,
-    subTitle: string,
-    features: Array<String>,
-    variant?: 'orange' | 'white',
-    height?: 'primary' | 'secondary',
+export default interface PricingEntity {
+  title: string;
+  subTitle: string;
+  features: Array<String>;
+  price?: string;
+  salePrice?: string;
+  billingPeriod?: "mo" | "yr";
 }

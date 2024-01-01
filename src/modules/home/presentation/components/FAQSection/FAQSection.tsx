@@ -5,39 +5,33 @@ import { SectionContainer } from "@/core/presentation/components/SectionContaine
 export default function FAQSection() {
   const faq: FAQEntity[] = [
     {
-      question: "What does the web development process entail?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quisquam repudiandae. Illo, dolore hic? Placeat magnam pariatur qui aliquam, praesentium saepe eligendi, ullam blanditiis aut velit iste nulla ipsum quam.",
+      question: "What is the price?",
+      answer: "All prices are based on the complexity of the projects.",
     },
     {
-      question: "How long does it usually take to see SEO results?",
+      question: "Can I get access to both services?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quisquam repudiandae. Illo, dolore hic? Placeat magnam pariatur qui aliquam, praesentium saepe eligendi, ullam blanditiis aut velit iste nulla ipsum quam.",
+        "Yes. Since our Website development time is very less, we focus on building foundations for SEO while simultaneously making sure your time is well valued.",
     },
     {
-      question:
-        " What level of customization is possible for web design packages?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quisquam repudiandae. Illo, dolore hic? Placeat magnam pariatur qui aliquam, praesentium saepe eligendi, ullam blanditiis aut velit iste nulla ipsum quam.",
+      question: "How long does it take to start?",
+      answer: "We get started as soon as the contract are signed.",
     },
     {
-      question: "Can I switch between SEO packages if my needs change?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quisquam repudiandae. Illo, dolore hic? Placeat magnam pariatur qui aliquam, praesentium saepe eligendi, ullam blanditiis aut velit iste nulla ipsum quam.",
+      question: "How long does your process take?",
+      answer: "It depends on the complexity of the project.",
     },
     {
-      question:
-        "How does e-commerce integration fit into your web development packages?",
+      question: "Why choose Luminr over other Agencies?",
       answer:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quisquam repudiandae. Illo, dolore hic? Placeat magnam pariatur qui aliquam, praesentium saepe eligendi, ullam blanditiis aut velit iste nulla ipsum quam.",
     },
     {
       question: "What kind of reporting can I expect with your SEO packages?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quisquam repudiandae. Illo, dolore hic? Placeat magnam pariatur qui aliquam, praesentium saepe eligendi, ullam blanditiis aut velit iste nulla ipsum quam.",
+        "We're your dedicated visionaries with a wealth of experience.We are known for affordable excellence, where obsession with quality doesn't break the bank.",
     },
   ];
-
   return (
     <SectionContainer
       id="faq"

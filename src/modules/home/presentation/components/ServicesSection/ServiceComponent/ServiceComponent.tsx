@@ -24,9 +24,7 @@ export default function ServiceComponent({ service }: ServiceComponentProps) {
               {service.description}
             </p>
           </div>
-          <Button className=" py-4 px-8 text-sm lg:text-2xl">
-            Learn More
-          </Button>
+          <Button className=" py-4 px-8 text-sm lg:text-2xl">Learn More</Button>
         </div>
         <div className="">{service.image}</div>
       </section>

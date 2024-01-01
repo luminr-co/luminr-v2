@@ -1,1 +1,1 @@
-export {default as BenefitSection} from './BenefitSection'
+export { default as BenefitSection } from "./BenefitSection";

@@ -1,58 +1,47 @@
-import PricingEntity from "../../../../../core/domain/entities/PricingEntity";
-import PricingComponent from "../../../../../core/presentation/components/PricingComponent/PricingComponent";
+import PricingEntity from "@/core/domain/entities/PricingEntity";
+import PricingComponent from "@/core/presentation/components/PricingComponent/PricingComponent";
 
 export default function PricingPlanSeo() {
-    const starter: PricingEntity = {
-        title: "Starter",
-        subTitle:
-          "Great for brands that are just launching with limited capital and low time.",
-        features: [
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-        ],
-        height: "primary",
-      };
-      const growth: PricingEntity = {
-        title: "Growth",
-        subTitle:
-          "Great for brands that are just launching with limited capital and low time.",
-        features: [
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-        ],
-        variant: "orange",
-        height: "secondary",
-      };
-    
-      const pro: PricingEntity = {
-        title: "Pro",
-        subTitle:
-          "Great for brands that are just launching with limited capital and low time.",
-        features: [
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-          "Lorem Ipsum dolor amit set.",
-        ],
-        height: "primary",
-      };
+  const rankImprovement: PricingEntity = {
+    title: "Rank Improvement",
+    subTitle:
+      "For Shopify Stores that want to improve their rankings with limited capital and low time.",
+    features: [
+      "Keyword Performances Target Rankings",
+      "Conversion-Driven Optimization",
+      "Traffic and Engagement Increment*",
+      "Domain Authority Escalation*",
+      "Performance Review Meeting",
+      "Traffic and Engagement Increment by 30%",
+      "Domain Authority Escalation by 20%",
+    ],
+    price: "$800",
+    salePrice: "$400",
+    billingPeriod: "mo"
+  };
+  const kingOfYourNiche: PricingEntity = {
+    title: "King of your Niche",
+    subTitle: "Everything in Rank Improvement Package plus:",
+    features: [
+      "Revenue-Driven SEO",
+      "Sale Goals and SEO Campaign Alignment",
+      "Advanced Conversion Optimization",
+      "Comprehensive E-Commerce Analytics",
+      "Strategic Content Development",
+      "Proactive Competitor Analysis",
+    ],
+    price: "$1200",
+    billingPeriod: "mo"
+  };
+
   return (
-    <div className="flex lg:flex-row flex-col lg:mx-auto lg:gap-10 gap-6 justify-between items-center">
-    <PricingComponent pricing={starter} />
-    
-    <PricingComponent pricing={growth} />
-  
-    <PricingComponent pricing={pro} />
-  </div>
-  )
+    <div
+      className="flex lg:flex-row flex-col lg:gap-11 gap-14 justify-center mx-6 lg:mx-8 items-stretch"
+      id="packages"
+    >
+      <PricingComponent pricing={rankImprovement} />
+
+      <PricingComponent pricing={kingOfYourNiche} />
+    </div>
+  );
 }

@@ -2,34 +2,62 @@ import PricingEntity from "../../../domain/entities/PricingEntity";
 import { Button } from "../Button";
 import TickIcon from "../../assets/icons/TickIcon";
 import { twMerge } from "tailwind-merge";
+import React from "react";
+import CallIcon from "../../assets/icons/CallIcon";
+import Link from "next/link";
 
 interface Props {
   pricing: PricingEntity;
+  variant?: "orange" | "white";
+  tagNode?: React.ReactNode;
 }
 
-export default function PricingComponent({ pricing }: Props) {
+export default function PricingComponent({
+  pricing,
+  variant = "white",
+  tagNode,
+}: Props) {
   return (
     <>
       <div
         className={twMerge(
-          `flex flex-col border-4 rounded-xl font-secondary border-beige lg:p-8 p-6 ${
-            pricing.height == "primary" ? "lg:pb-44 pb-32" : "lg:pb-72 pb-32 "
-          } text-beige gap-8 lg:w-1/3 relative`,
-          pricing.variant == "orange" && "border-orange mt-3 lg:mt-0"
+          `flex flex-col border-4 rounded-xl font-secondary border-beige lg:p-8 p-6 text-beige gap-8 relative flex-1 lg:max-w-[430px]`,
+          variant == "orange" && "border-orange mt-3 lg:mt-0"
         )}
       >
         <div className="flex flex-row items-center justify-center ">
-          {pricing.variant == "orange" && (
+          {tagNode && (
             <div className="text-beige text-base font-bold bg-orange px-4 py-3 w-fit absolute rounded lg:-translate-y-8 -translate-y-1/2 ">
-              {pricing.height == "primary" && "Best Value"}
-              {pricing.height == "secondary" && "Recommended"}
+              {tagNode}
             </div>
           )}
         </div>
         <div className="flex flex-col gap-1">
-          <h1 className="font-secondary lg:text-4xl text-2xl font-bold">
+          <h3 className="font-secondary lg:text-4xl text-2xl font-bold">
             {pricing.title}
-          </h1>
+          </h3>
+          {pricing.price && (
+            <div>
+              <span
+                className={twMerge(
+                  "font-secondary text-4xl font-bold",
+                  pricing.salePrice
+                    ? "text-beige line-through decoration-orange decoration-4"
+                    : "text-orange"
+                )}
+              >
+                {pricing.price}
+              </span>
+              {pricing.salePrice && (
+                <span className="text-orange font-bold text-4xl ml-3">
+                  {pricing.salePrice}
+                </span>
+              )}
+              {pricing.billingPeriod && (
+                <span className="text-beige text-2xl font-bold">{`/${pricing.billingPeriod}`}</span>
+              )}
+            </div>
+          )}
           <p className="text-gray lg:text-xl text-base font-normal">
             {pricing.subTitle}
           </p>
@@ -46,9 +74,14 @@ export default function PricingComponent({ pricing }: Props) {
             </div>
           ))}
         </div>
-        <Button className="w-full text-xl px-4 py-3 lg:py-5 lg:px-5 ">
-          Explore Plan
-        </Button>
+        <Link href={"#call"}>
+          <Button className="w-full text-xl px-4 py-3 lg:py-5 lg:px-5 flex flex-row gap-3 justify-center items-center">
+            <span>
+              <CallIcon />
+            </span>
+            <p>Hop on a Call</p>
+          </Button>
+        </Link>
       </div>
     </>
   );

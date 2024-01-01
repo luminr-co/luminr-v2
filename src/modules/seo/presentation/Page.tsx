@@ -1,5 +1,3 @@
-import { CalendarSection } from "../../../core/presentation/components/CalendarSection";
-import { FaqSection } from "../../../core/presentation/components/FaqSection";
 import { Footer } from "../../../core/presentation/components/Footer";
 import { PricingSectionSeo } from "./components/PricingSection";
 import { BenefitSection } from "./components/BenefitSection";
@@ -8,6 +6,8 @@ import { ProcessSection } from "./components/ProcessSection";
 import ResultsSection from "./components/ResultsSection/ResultsSection";
 import { Testimonials } from "./components/Testimonials";
 import { GuaranteeSection } from "./components/GuaranteeSection";
+import { FAQSection } from "./components/FAQSection";
+import { CalendarSection } from "./components/CalendarSection";
 
 export default function SeoPage() {
   return (
@@ -19,9 +19,9 @@ export default function SeoPage() {
         <ProcessSection />
         <Testimonials />
         <PricingSectionSeo />
-        <FaqSection />
+        <FAQSection />
         <CalendarSection />
-        <GuaranteeSection/>
+        <GuaranteeSection />
         <Footer />
       </div>
     </>

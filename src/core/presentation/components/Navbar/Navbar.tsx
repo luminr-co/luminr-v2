@@ -7,6 +7,7 @@ import LogoSmall from "../../assets/images/LogoSmall";
 import MenuIcon from "../../assets/icons/MenuIcon";
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import { createPortal } from "react-dom";
 
 export default function Navbar() {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
@@ -84,9 +85,18 @@ export default function Navbar() {
             <MenuIcon />
           </button>
           {isSidebarVisible && (
-            <div className="absolute -top-6 -left-0 bg-black h-screen">
-              <NavbarList onClose={handleCloseSidebar} />
-            </div>
+            <>
+              {createPortal(
+                <div
+                  className="fixed inset-0 z-40"
+                  onClick={handleCloseSidebar}
+                ></div>,
+                document.body
+              )}
+              <div className="absolute -top-6 -left-0 bg-black h-screen z-50">
+                <NavbarList onClose={handleCloseSidebar} />
+              </div>
+            </>
           )}
         </motion.div>
       </motion.nav>

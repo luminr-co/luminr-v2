@@ -20,7 +20,7 @@ export default function FAQComponent({ faq }: Props) {
   return (
     <div className="lg:border-4 border-2 border-beige rounded-xl py-6 px-8 gap-5">
       <div className="flex flex-row justify-between items-center">
-        <p className="text-beige lg:text-2xl text-base font-normal">
+        <p className="text-beige lg:text-2xl text-base font-normal font-secondary">
           {faq.question}
         </p>
         <button

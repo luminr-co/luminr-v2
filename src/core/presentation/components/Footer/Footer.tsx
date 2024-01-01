@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FacebookIcon from "../../assets/icons/FacebookIcon";
 import InstagramIcon from "../../assets/icons/InstagramIcon";
 import LinkedinIcon from "../../assets/icons/LinkedinIcon";
@@ -26,20 +27,20 @@ export default function Footer() {
               <span>
                 <MessageIcon />
               </span>
-              <p>hello@luminr.co</p>
+              <a href="mailto:hello@luminr.co">hello@luminr.co</a>
             </li>
           </ul>
           <div className="font-normal flex lg:flex-row flex-col lg:gap-16 gap-4">
             <ul className="list-none flex flex-col gap-4">
-              <li>Web Development</li>
-              <li>SEO for Shopify Stores</li>
-              <li>Benefits</li>
-              <li>Work</li>
+              <li><Link href="/website-development">Web Development</Link></li>
+              <li><Link href="/seo">SEO for Shopify Stores</Link></li>
+              <li><a href="/#benefits">Benefits</a></li>
+              <li><a href="/#work">Work</a></li>
             </ul>
             <ul className="list-none flex flex-col gap-4">
-              <li>Testimonials</li>
-              <li>Packages</li>
-              <li>FAQ</li>
+              <li><a href="/#testimonials">Testimonials</a></li>
+              <li><a href="/#pricing">Packages</a></li>
+              <li><a href="/#faq">FAQ</a></li>
             </ul>
           </div>
           <div className="flex flex-col gap-3 justify-end lg:items-end items-start">

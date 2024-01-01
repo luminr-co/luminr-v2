@@ -1,13 +1,13 @@
-import { ProcessEntity } from "../../../../../core/domain/entities/ProcessEntity";
-import { ProcessList } from "../../../../../core/presentation/components/ProcessList";
-import SectionHeader from "../../../../home/presentation/components/SectionHeader/SectionHeader";
-import ContentWriting from "../../../../../core/presentation/assets/images/process/ContentWriting";
-import Development from "../../../../../core/presentation/assets/images/process/Development";
+import { ProcessEntity } from "@/core/domain/entities/ProcessEntity";
 import DiscoveryCall from "../../assets/images/ProcessSection/DiscoveryCall";
-import HandOff from "../../assets/images/ProcessSection/HandOff";
-import HighFidelity from "../../assets/images/ProcessSection/HighFidelity";
-import Onboarding from "../../assets/images/ProcessSection/Onboarding";
 import { NumberingSection } from "../NumberingSection";
+import Onboarding from "../../assets/images/ProcessSection/Onboarding";
+import ContentWriting from "@/core/presentation/assets/images/process/ContentWriting";
+import HighFidelity from "../../assets/images/ProcessSection/HighFidelity";
+import Development from "@/core/presentation/assets/images/process/Development";
+import HandOff from "../../assets/images/ProcessSection/HandOff";
+import { SectionContainer } from "@/core/presentation/components/SectionContainer";
+import { ProcessList } from "@/core/presentation/components/ProcessList";
 
 export default function ProcessSection() {
   const processlist: ProcessEntity[] = [
@@ -23,43 +23,45 @@ export default function ProcessSection() {
       title: "Onboarding",
       description:
         "We invite you to our communication channel and make you familiar with the process and set clear expectations moving forward.",
-      time: "30 minutes",
+      time: "1 day",
     },
     {
       image: <ContentWriting />,
       title: "Content Writing and Wireframing",
       description:
         "We gather assets to help clear how you want the website’s design direction to be like. We also create low to mid fidelity wireframes. We have a DIY/DWY/DFY approach when it comes to content creation.",
-      time: "30 minutes",
+      time: "3 days",
     },
     {
       image: <HighFidelity />,
       title: "High Fidelity Design",
       description:
         "High Fidelity Designs are created that communicate your business’s value and mission.",
-      time: "30 minutes",
+      time: "4 days",
     },
     {
       image: <Development />,
       title: "Development",
       description:
         "High Fidelity Designs are converted into working product that you can show off to the world.",
-      time: "30 minutes",
+      time: "5 days",
     },
     {
       image: <HandOff />,
       title: "Hand Off",
-      description: "We give yo",
-      time: "30 minutes",
+      description: "We give you full control and access over your website and handover all the required documents.",
+      time: "1 day",
     },
   ];
   return (
-    <section className="lg:px-56 px-6 lg:pt-32 pt-40 max-w-full">
-      <SectionHeader sectionName="process" />
-      <h1 className="lg:text-5xl text-2xl font-extrabold text-beige text-center lg:mb-40 mb-10">
+    <SectionContainer
+      id="process"
+      sectionName="PROCESS"
+      sectionTitle="
         At Luminr, We Have Well Defined Processes to Help You Save Time and
         Focus on Your Business
-      </h1>
+    "
+    >
       <div className="flex flex-row gap-14 items-center">
         <div className="hidden lg:inline-block">
           <NumberingSection />
@@ -68,6 +70,6 @@ export default function ProcessSection() {
           <ProcessList processes={processlist} />
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 }
