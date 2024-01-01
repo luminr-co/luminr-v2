@@ -35,12 +35,14 @@ export default function BenefitSection() {
     >
       <div className="flex flex-col justify-center items-center">
         <BenefitList benefits={benefits} />
-        <Button className="flex flex-row gap-3 justify-center items-center text-beige font-secondary text-xl font-medium mt-16">
-          <span>
-            <CallIcon />
-          </span>
-          <p className="lg:text-xl text-sm">Book a Free Discovery Call</p>
-        </Button>
+        <a href="#call">
+          <Button className="flex flex-row gap-3 justify-center items-center text-beige font-secondary text-xl font-medium mt-16">
+            <span>
+              <CallIcon />
+            </span>
+            <p className="lg:text-xl text-sm">Book a Free Discovery Call</p>
+          </Button>
+        </a>
       </div>
     </SectionContainer>
   );

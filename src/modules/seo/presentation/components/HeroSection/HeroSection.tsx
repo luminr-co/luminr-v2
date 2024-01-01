@@ -12,12 +12,14 @@ export default function HeroSection() {
         We Place Your Website in Front of Your Dream Customers Through Revenue
         Focused SEO
       </p>
-      <Button className="flex flex-row justify-center gap-3 items-center mt-8">
-        <span>
-          <CallIcon />
-        </span>
-        <p className="text-sm lg:text-xl">Increase my Traffic</p>
-      </Button>
+      <a href="#call">
+        <Button className="flex flex-row justify-center gap-3 items-center mt-8">
+          <span>
+            <CallIcon />
+          </span>
+          <p className="text-sm lg:text-xl">Increase my Traffic</p>
+        </Button>
+      </a>
     </section>
   );
 }

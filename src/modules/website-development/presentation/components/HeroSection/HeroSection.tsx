@@ -11,12 +11,14 @@ export default function HeroSection() {
         We Build Professional Websites for Products, Services and Startups So
         They Can Save Time and Focus on Their High ROI Activities.
       </p>
-      <Button className="flex flex-row justify-center gap-3 items-center mt-8">
-        <span>
-          <CallIcon />
-        </span>
-        <p className="text-sm lg:text-xl">Hop on a Call</p>
-      </Button>
+      <a href="#call">
+        <Button className="flex flex-row justify-center gap-3 items-center mt-8">
+          <span>
+            <CallIcon />
+          </span>
+          <p className="text-sm lg:text-xl">Hop on a Call</p>
+        </Button>
+      </a>
     </section>
   );
 }

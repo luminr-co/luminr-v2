@@ -32,14 +32,15 @@ export default function BenefitSection() {
       sectionTitle="Get in front of users who are already searching for the products you sell"
     >
       <div className="flex flex-col justify-center items-center">
-      <BenefitList benefits={benefits} />
-      <Button className="flex flex-row gap-3 justify-center items-center text-beige font-secondary text-xl font-medium mt-16">
-        <span>
-          <CallIcon />
-        </span>
-        <p className="lg:text-xl text-sm">Book a Free Discovery Call</p>
-      </Button>
-
+        <BenefitList benefits={benefits} />
+        <a href="#call">
+          <Button className="flex flex-row gap-3 justify-center items-center text-beige font-secondary text-xl font-medium mt-16">
+            <span>
+              <CallIcon />
+            </span>
+            <p className="lg:text-xl text-sm">Book a Free Discovery Call</p>
+          </Button>
+        </a>
       </div>
     </SectionContainer>
   );
