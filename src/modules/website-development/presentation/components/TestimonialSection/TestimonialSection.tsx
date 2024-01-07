@@ -14,6 +14,7 @@ export default function TestimonialSection() {
     },
   ];
   return (
+    <div className="px-5 lg:px-0">
     <SectionContainer
       id="testimonials"
       sectionName="TESTIMONIALS"
@@ -21,5 +22,6 @@ export default function TestimonialSection() {
     >
       <FeedbackList variant="primary" feedbacks={feedbacks} />
     </SectionContainer>
+    </div>
   );
 }

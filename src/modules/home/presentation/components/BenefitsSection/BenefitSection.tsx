@@ -28,6 +28,7 @@ export default function BenefitSection() {
   ];
 
   return (
+    <section className="px-6 lg:px-0"> 
     <SectionContainer
       id="benefits"
       sectionName="BENEFITS"
@@ -40,5 +41,6 @@ export default function BenefitSection() {
     >
       <BenefitList benefits={benefits} />
     </SectionContainer>
+    </section>
   );
 }

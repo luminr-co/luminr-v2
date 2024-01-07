@@ -4,6 +4,7 @@ import { SectionContainer } from "@/core/presentation/components/SectionContaine
 
 export default function ResultsSection() {
   return (
+    <section className="px-6 lg:px-0">
     <SectionContainer
       id="results"
       sectionName="RESULTS"
@@ -20,5 +21,6 @@ export default function ResultsSection() {
 
       </div>
     </SectionContainer>
+    </section>
   );
 }

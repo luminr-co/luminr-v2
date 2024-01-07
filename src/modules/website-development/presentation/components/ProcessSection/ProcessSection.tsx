@@ -8,6 +8,7 @@ import Development from "@/core/presentation/assets/images/process/Development";
 import HandOff from "../../assets/images/ProcessSection/HandOff";
 import { SectionContainer } from "@/core/presentation/components/SectionContainer";
 import { ProcessList } from "@/core/presentation/components/ProcessList";
+import { SmoothScroll } from "@/core/presentation/components/SmoothScroll";
 
 export default function ProcessSection() {
   const processlist: ProcessEntity[] = [
@@ -49,27 +50,32 @@ export default function ProcessSection() {
     {
       image: <HandOff />,
       title: "Hand Off",
-      description: "We give you full control and access over your website and handover all the required documents.",
+      description:
+        "We give you full control and access over your website and handover all the required documents.",
       time: "1 day",
     },
   ];
   return (
-    <SectionContainer
-      id="process"
-      sectionName="PROCESS"
-      sectionTitle="
+    <section className="px-6 lg:px-0">
+      <SectionContainer
+        id="process"
+        sectionName="PROCESS"
+        sectionTitle="
         At Luminr, We Have Well Defined Processes to Help You Save Time and
         Focus on Your Business
     "
-    >
-      <div className="flex flex-row gap-14 items-center">
-        <div className="hidden lg:inline-block">
-          <NumberingSection />
-        </div>
-        <div className="flex justify-center">
-          <ProcessList processes={processlist} />
-        </div>
-      </div>
-    </SectionContainer>
+      >
+        <SmoothScroll>
+          <div className="flex flex-row gap-14 items-center">
+            <div className="hidden lg:inline-block">
+              <NumberingSection />
+            </div>
+            <div className="flex justify-center">
+              <ProcessList processes={processlist} />
+            </div>
+          </div>
+        </SmoothScroll>
+      </SectionContainer>
+    </section>
   );
 }

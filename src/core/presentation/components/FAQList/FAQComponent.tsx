@@ -4,6 +4,7 @@ import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
 import AddIcon from "../../assets/icons/AddIcon";
 import { FAQEntity } from "@/core/domain/entities/FAQEntity";
+import { SmoothScroll } from "../SmoothScroll";
 
 
 interface Props {
@@ -18,6 +19,7 @@ export default function FAQComponent({ faq }: Props) {
   };
 
   return (
+    <SmoothScroll>
     <div className="lg:border-4 border-2 border-beige rounded-xl py-6 px-8 gap-5">
       <div className="flex flex-row justify-between items-center">
         <p className="text-beige lg:text-2xl text-base font-normal font-secondary">
@@ -41,5 +43,6 @@ export default function FAQComponent({ faq }: Props) {
         )}
       </AnimatePresence>
     </div>
+    </SmoothScroll>
   );
 }

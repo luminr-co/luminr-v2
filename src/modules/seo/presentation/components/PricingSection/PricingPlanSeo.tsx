@@ -39,9 +39,9 @@ export default function PricingPlanSeo() {
       className="flex lg:flex-row flex-col lg:gap-11 gap-14 justify-center mx-6 lg:mx-8 items-stretch"
       id="packages"
     >
-      <PricingComponent pricing={rankImprovement} />
+      <PricingComponent pricing={rankImprovement} variant="white" tagNode="Risk Free Initial Month" tagNodeOrange="(45% off)"/>
 
-      <PricingComponent pricing={kingOfYourNiche} />
+      <PricingComponent pricing={kingOfYourNiche} variant="orange" tagNode="Best Value"/>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import PricingPlanSeo from "./PricingPlanSeo";
 
 export default function PricingSection() {
   return (
+    <section className="px-6 lg:px-0">
     <SectionContainer
       id="pricing"
       sectionName="PRICING"
@@ -10,5 +11,6 @@ export default function PricingSection() {
     >
       <PricingPlanSeo />
     </SectionContainer>
+    </section>
   );
 }

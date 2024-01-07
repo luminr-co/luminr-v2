@@ -1,5 +1,6 @@
 import { FeedbackEntity } from "@/core/domain/entities/FeedbackEntity";
 import FeedbackComponent from "./FeedbackComponent";
+import { SmoothScroll } from "../SmoothScroll";
 
 interface Props {
   feedbacks: FeedbackEntity[];
@@ -8,6 +9,7 @@ interface Props {
 
 export default function FeedbackList({ variant, feedbacks }: Props) {
   return (
+    <SmoothScroll>
     <div className="container mx-auto">
       {variant == "primary" && (
         <div className="overflow-x-hidden w-full pt-4" id="testimonials">
@@ -23,6 +25,7 @@ export default function FeedbackList({ variant, feedbacks }: Props) {
             </div>
           </div>
         </div>
+        
       )}
       {variant == "secondary" && (
         <div
@@ -41,5 +44,6 @@ export default function FeedbackList({ variant, feedbacks }: Props) {
         </div>
       )}
     </div>
+    </SmoothScroll>
   );
 }
