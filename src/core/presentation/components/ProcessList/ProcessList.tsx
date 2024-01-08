@@ -11,8 +11,8 @@ export default function ProcessList({ processes }: IProcessList) {
     <>
       <section className="flex flex-col lg:gap-12 gap-4 justify-center items-center">
         {processes.map((process, i) => (
-          <SmoothScroll>
-          <ProcessComponent process={process} key={i} />
+          <SmoothScroll key={i}>
+            <ProcessComponent process={process} />
           </SmoothScroll>
         ))}
       </section>

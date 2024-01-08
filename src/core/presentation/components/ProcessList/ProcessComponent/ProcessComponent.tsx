@@ -2,6 +2,7 @@ import { ProcessEntity } from "../../../../domain/entities/ProcessEntity";
 
 interface ProcessProps {
   process: ProcessEntity;
+  
 }
 
 export default function ProcessComponent({ process }: ProcessProps) {
