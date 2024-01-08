@@ -10,8 +10,8 @@ export default function BenefitList({ benefits }: Props) {
   return (
     <div className="flex lg:flex-row flex-col justify-between lg:items-start items-center gap-14 lg:gap-0">
       {benefits.map((benefit, i) => (
-        <SmoothScroll>
-        <BenefitCard benefit={benefit} key={i} />
+        <SmoothScroll  key={i} >
+        <BenefitCard benefit={benefit}/>
         </SmoothScroll>
       ))}
     </div>
