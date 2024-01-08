@@ -2,6 +2,7 @@ import { twMerge } from "tailwind-merge";
 import Link from "next/link";
 import { ServiceEntity } from "@/core/domain/entities/ServiceEntity";
 import { Button } from "@/core/presentation/components/Button";
+import { SmoothScroll } from "@/core/presentation/components/SmoothScroll";
 
 export interface ServiceComponentProps {
   service: ServiceEntity;
@@ -10,6 +11,7 @@ export interface ServiceComponentProps {
 export default function ServiceComponent({ service }: ServiceComponentProps) {
   return (
     <>
+    <SmoothScroll>
       <section
         className={twMerge(
           " text-beige flex lg:flex-row flex-col-reverse items-center max-w-full justify-between gap-6 lg:gap-0",
@@ -33,6 +35,7 @@ export default function ServiceComponent({ service }: ServiceComponentProps) {
         </div>
         <div className="">{service.image}</div>
       </section>
+      </SmoothScroll>
     </>
   );
 }

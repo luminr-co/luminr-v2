@@ -7,6 +7,7 @@ import { TestimonialSection } from "./components/TestimonialSection";
 import { WorkSection } from "./components/WorkSection";
 import { FAQSection } from "./components/FAQSection";
 import { CalendarSection } from "./components/CalendarSection";
+import { SmoothScroll } from "@/core/presentation/components/SmoothScroll";
 
 export default function WebsitePage() {
   return (

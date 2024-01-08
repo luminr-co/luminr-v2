@@ -6,6 +6,7 @@ import LongTermValue from "../../assets/images/BenefitSection/LongTermValue";
 import { BenefitList } from "@/core/presentation/components/BenefitList";
 import { Button } from "@/core/presentation/components/Button";
 import CallIcon from "@/core/presentation/assets/icons/CallIcon";
+import { SmoothScroll } from "@/core/presentation/components/SmoothScroll";
 
 export default function BenefitSection() {
   const benefits: ServiceEntity[] = [
@@ -26,24 +27,26 @@ export default function BenefitSection() {
     },
   ];
   return (
-    <SectionContainer
-      id="benefits"
-      sectionName="BENEFITS"
-      sectionTitle=" 
+    <SmoothScroll>
+      <SectionContainer
+        id="benefits"
+        sectionName="BENEFITS"
+        sectionTitle=" 
         Why Luminr Will Be Your Guide to Success
     "
-    >
-      <div className="flex flex-col justify-center items-center">
-        <BenefitList benefits={benefits} />
-        <a href="#call">
-          <Button className="flex flex-row gap-3 justify-center items-center text-beige font-secondary text-xl font-medium mt-16">
-            <span>
-              <CallIcon />
-            </span>
-            <p className="lg:text-xl text-sm">Book a Free Discovery Call</p>
-          </Button>
-        </a>
-      </div>
-    </SectionContainer>
+      >
+        <div className="flex flex-col justify-center items-center px-6 lg:px-0">
+          <BenefitList benefits={benefits} />
+          <a href="#call">
+            <Button className="flex flex-row gap-3 justify-center items-center text-beige font-secondary text-xl font-medium mt-16">
+              <span>
+                <CallIcon />
+              </span>
+              <p className="lg:text-xl text-sm">Book a Free Discovery Call</p>
+            </Button>
+          </a>
+        </div>
+      </SectionContainer>
+    </SmoothScroll>
   );
 }

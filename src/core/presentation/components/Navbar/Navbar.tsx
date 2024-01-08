@@ -58,7 +58,7 @@ export default function Navbar() {
                 : "100%",
           }
         }
-        className="rounded-full py-4 lg:px-20 px-16 bg-black shadow-2xl  mx-auto overflow-hidden"
+        className="rounded-full py-4 lg:px-20 px-16 bg-black shadow-  mx-auto overflow-hidden"
       >
         <motion.div
           animate={childControls}

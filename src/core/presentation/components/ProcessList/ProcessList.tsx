@@ -1,4 +1,5 @@
 import { ProcessEntity } from "../../../domain/entities/ProcessEntity";
+import { SmoothScroll } from "../SmoothScroll";
 import { ProcessComponent } from "./ProcessComponent";
 
 interface IProcessList {
@@ -10,7 +11,9 @@ export default function ProcessList({ processes }: IProcessList) {
     <>
       <section className="flex flex-col lg:gap-12 gap-4 justify-center items-center">
         {processes.map((process, i) => (
+          <SmoothScroll>
           <ProcessComponent process={process} key={i} />
+          </SmoothScroll>
         ))}
       </section>
     </>

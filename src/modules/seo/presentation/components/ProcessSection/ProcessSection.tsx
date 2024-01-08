@@ -55,6 +55,7 @@ export default function ProcessSection() {
     },
   ];
   return (
+    <section className="px-5 lg:px-0">
     <SectionContainer
       id="process"
       sectionName="PROCESS"
@@ -72,5 +73,6 @@ export default function ProcessSection() {
         </div>
       </div>
     </SectionContainer>
+    </section>
   );
 }

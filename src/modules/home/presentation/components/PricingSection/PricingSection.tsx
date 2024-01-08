@@ -15,6 +15,7 @@ export default function PricingSection() {
   };
 
   return (
+    <section className="px-6 lg:px-0">
     <SectionContainer
       id="pricing"
       sectionName="Pricing"
@@ -32,5 +33,6 @@ export default function PricingSection() {
         {active === "SEO" && <PricingPlanSeo />}
       </div>
     </SectionContainer>
+    </section>
   );
 }

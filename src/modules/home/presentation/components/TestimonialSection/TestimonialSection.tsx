@@ -24,12 +24,14 @@ export default function TestimonialSection() {
   ];
 
   return (
-    <SectionContainer
-      id="testimonials"
-      sectionName="TESTIMONIALS"
-      sectionTitle={"What Our Clients Say"}
-    >
-      <FeedbackList feedbacks={feedbacks} variant="secondary" />;
-    </SectionContainer>
+    <section className="px-5 lg:px-0">
+      <SectionContainer
+        id="testimonials"
+        sectionName="TESTIMONIALS"
+        sectionTitle={"What Our Clients Say"}
+      >
+        <FeedbackList feedbacks={feedbacks} variant="secondary" />;
+      </SectionContainer>
+    </section>
   );
 }
