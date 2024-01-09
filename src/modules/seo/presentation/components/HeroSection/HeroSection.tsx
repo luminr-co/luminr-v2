@@ -1,5 +1,5 @@
-import { Button } from "../../../../../core/presentation/components/Button";
-import CallIcon from "../../../../../core/presentation/assets/icons/CallIcon";
+import CallIcon from "@/core/presentation/assets/icons/CallIcon";
+import { Button } from "@/core/presentation/components/Button";
 
 export default function HeroSection() {
   return (

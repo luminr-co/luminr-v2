@@ -92,14 +92,15 @@ export default function Navbar() {
         <>
           {createPortal(
             <motion.div
-              className="fixed inset-0 z-40"
+              className="fixed inset-0 z-50"
               onClick={handleCloseSidebar}
-            ></motion.div>,
+            >
+              <div className="absolute top-0 bottom-0 left-0 bg-black h-full w-full z-50">
+                <NavbarList onClose={handleCloseSidebar} />
+              </div>
+            </motion.div>,
             document.body
           )}
-          <div className="absolute top-0 bottom-0 left-0 bg-black h-screen z-50">
-            <NavbarList onClose={handleCloseSidebar} />
-          </div>
         </>
       )}
     </>
