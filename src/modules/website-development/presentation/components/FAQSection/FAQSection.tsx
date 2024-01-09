@@ -6,37 +6,39 @@ export default function FAQSection() {
   const faq: FAQEntity[] = [
     {
       question: "What if the project goes beyond scope?",
-      answer:
+      answer: [
         "Since all the deliverables are confirmed before start of the work, if the project goes out of the scope - we will follow Change Request management process.",
+      ],
     },
     {
       question: "Retainer or one-time projects?",
-      answer:
+      answer: [
         "Website Development projects are usually one-time but with the exception of yearly domain and maintenance charges.",
+      ],
     },
     {
       question: "How do refunds work?",
-      answer: "Refunds cannot be placed after we move onto designing fidelity.",
+      answer: [
+        "Refunds cannot be placed after we move onto designing fidelity.",
+      ],
     },
     {
       question: "How do Revisions Work?",
-      answer:
+      answer: [
         "Record a quick loom video about what you want to change/add/remove in terms of design, copy and structure, get delivered in 1-3 days with 0 cost. ",
-    },
-    {
-      question: "Why choose Luminr over other Agencies?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quisquam repudiandae. Illo, dolore hic? Placeat magnam pariatur qui aliquam, praesentium saepe eligendi, ullam blanditiis aut velit iste nulla ipsum quam.",
+      ],
     },
     {
       question: "What is needed from me?",
-      answer:
+      answer: [
         "After onboarding, we will send you forms that help gather important information about your business. We might further require other information as we move forward with the project.",
+      ],
     },
     {
       question: "How do I know that I'm qualified for this service?",
-      answer:
+      answer: [
         "If you have a product, service or a startup with sizable monthly income and looking to redesign or create a new website from scratch.",
+      ],
     },
   ];
 

@@ -6,30 +6,29 @@ export default function FAQSection() {
   const faq: FAQEntity[] = [
     {
       question: "What is the price?",
-      answer: "All prices are based on the complexity of the projects.",
+      answer: ["All prices are based on the complexity of the projects."],
     },
     {
       question: "Can I get access to both services?",
-      answer:
+      answer: [
         "Yes. Since our Website development time is very less, we focus on building foundations for SEO while simultaneously making sure your time is well valued.",
+      ],
     },
     {
       question: "How long does it take to start?",
-      answer: "We get started as soon as the contract are signed.",
+      answer: ["We get started as soon as the contract are signed."],
     },
     {
       question: "How long does your process take?",
-      answer: "It depends on the complexity of the project.",
+      answer: ["It depends on the complexity of the project."],
     },
     {
       question: "Why choose Luminr over other Agencies?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, quisquam repudiandae. Illo, dolore hic? Placeat magnam pariatur qui aliquam, praesentium saepe eligendi, ullam blanditiis aut velit iste nulla ipsum quam.",
-    },
-    {
-      question: "What kind of reporting can I expect with your SEO packages?",
-      answer:
-        "We're your dedicated visionaries with a wealth of experience.We are known for affordable excellence, where obsession with quality doesn't break the bank.",
+      answer: [
+        "Obsession with quality doesn't mean breaking the bank.",
+        "Enjoy affordable prices without compromising excellence.",
+        "We're your dedicated visionaries with a wealth of experience.",
+      ],
     },
   ];
   return (

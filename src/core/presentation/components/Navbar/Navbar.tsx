@@ -6,7 +6,7 @@ import CallIcon from "../../assets/icons/CallIcon";
 import LogoSmall from "../../assets/images/LogoSmall";
 import MenuIcon from "../../assets/icons/MenuIcon";
 import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { easeInOut, motion, useAnimation } from "framer-motion";
 import { createPortal } from "react-dom";
 
 export default function Navbar() {
@@ -45,61 +45,63 @@ export default function Navbar() {
   useEffect(() => {});
 
   return (
-    <motion.div className="fixed top-6 z-50 left-1/2 -translate-x-1/2 w-full px-4 container mx-auto">
-      <motion.nav
-        animate={parentControls}
-        initial={
-          typeof window !== "undefined" && {
-            width:
-              window.innerWidth < 1280
-                ? window.innerWidth < 1024
-                  ? "24rem"
-                  : "66%"
-                : "100%",
+    <>
+      <motion.div className="fixed top-6 z-50 left-1/2 -translate-x-1/2 w-full px-4 container mx-auto ">
+        <motion.nav
+          animate={parentControls}
+          initial={
+            typeof window !== "undefined" && {
+              width:
+                window.innerWidth < 1280
+                  ? window.innerWidth < 1024
+                    ? "24rem"
+                    : "66%"
+                  : "100%",
+            }
           }
-        }
-        className="rounded-full py-4 lg:px-20 px-16 bg-black shadow-  mx-auto overflow-hidden"
-      >
-        <motion.div
-          animate={childControls}
-          className="w-full flex flex-row justify-between items-center"
+          className="rounded-full py-4 lg:px-20 px-16 bg-black shadow-  mx-auto overflow-hidden shadow-[0_10px_28px_0px_rgba(0,0,0,0.45)]"
         >
-          <a className="hidden xl:inline-block cursor-pointer" href="/">
-            <LogoFull />
-          </a>
-          <a className="xl:hidden cursor-pointer" href="/">
-            <LogoSmall />
-          </a>
-          <div className="hidden xl:inline-block top-0 bg-black p-12 lg:p-0 left-0 ">
-            <NavbarList />
-          </div>
-          <a href="#call">
-            <Button className="xl:flex flex-row justify-center gap-3 items-center hidden ">
-              <span>
-                <CallIcon />
-              </span>
-              <p>Hop on a Call</p>
-            </Button>
-          </a>
-          <button className="xl:hidden" onClick={handleMenuIcon}>
-            <MenuIcon />
-          </button>
-          {isSidebarVisible && (
-            <>
-              {createPortal(
-                <div
-                  className="fixed inset-0 z-40"
-                  onClick={handleCloseSidebar}
-                ></div>,
-                document.body
-              )}
-              <div className="absolute -top-6 -left-0 bg-black h-screen z-50">
-                <NavbarList onClose={handleCloseSidebar} />
-              </div>
-            </>
+          <motion.div
+            animate={childControls}
+            className="w-full flex flex-row justify-between items-center"
+          >
+            <a className="hidden xl:inline-block cursor-pointer" href="/">
+              <LogoFull />
+            </a>
+            <a className="xl:hidden cursor-pointer" href="/">
+              <LogoSmall />
+            </a>
+            <div className="hidden xl:inline-block top-0 bg-black p-12 lg:p-0 left-0 ">
+              <NavbarList />
+            </div>
+            <a href="#call">
+              <Button className="xl:flex flex-row justify-center gap-3 items-center hidden ">
+                <span>
+                  <CallIcon />
+                </span>
+                <p>Hop on a Call</p>
+              </Button>
+            </a>
+            <button className="xl:hidden" onClick={handleMenuIcon}>
+              <MenuIcon />
+            </button>
+          </motion.div>
+        </motion.nav>
+      </motion.div>
+      {isSidebarVisible && (
+        <>
+          {createPortal(
+            <motion.div
+              className="fixed inset-0 z-40"
+              onClick={handleCloseSidebar}
+            ></motion.div>,
+            document.body
           )}
-        </motion.div>
-      </motion.nav>
-    </motion.div>
+          <div className="absolute top-0 bottom-0 left-0 bg-black h-screen z-50">
+            <NavbarList onClose={handleCloseSidebar} />
+          </div>
+        </>
+      )}
+    </>
   );
 }

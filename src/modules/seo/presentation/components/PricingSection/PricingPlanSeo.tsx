@@ -16,7 +16,7 @@ export default function PricingPlanSeo() {
       "Domain Authority Escalation by 20%",
     ],
     price: "$800",
-    salePrice: "$400",
+    salePrice: "$440",
     billingPeriod: "mo"
   };
   const kingOfYourNiche: PricingEntity = {
