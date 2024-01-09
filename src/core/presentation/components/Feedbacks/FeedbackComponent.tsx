@@ -15,7 +15,7 @@ export default function FeedbackComponent({ feedbackCard, variant }: Props) {
             <p className="lg:text-2xl text-base font-normal text-center">
               {feedbackCard.feedback}
             </p>
-            <div className="flex flex-col justify-center gap-4">
+            <div className="flex flex-col justify-center items-center gap-4">
               <Image
                 src={feedbackCard.image}
                 className="lg:w-28 lg:h-28 w-24 h-24 rounded-full"
