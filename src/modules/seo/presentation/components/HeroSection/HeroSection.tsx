@@ -9,8 +9,9 @@ export default function HeroSection() {
         Focused SEO
       </h1>
       <p className="font-normal font-secondary lg:text-3xl text-sm text-gray text-center">
-        We Place Your Website in Front of Your Dream Customers Through Revenue
-        Focused SEO
+        Our tailored Strategies addresses the unique needs of your e-commerce
+        store and optimize for higher search rankings, ensuring your products
+        shine.
       </p>
       <a href="#call">
         <Button className="flex flex-row justify-center gap-3 items-center mt-8">
