@@ -13,7 +13,7 @@ export default function GuaranteeSection() {
           width={368}
           height={368}
         />
-        <h3 className="lg:text-5xl text-2xl font-extrabold font-primary text-beige text-center lg:px-96 px-6 lg:mt-12 mt-6">
+        <h3 className="lg:text-5xl text-2xl font-extrabold font-primary text-beige text-center lg:px-32 lg:mx-10 px-6 lg:mt-12 mt-6">
           We guarantee higher traffic or we’ll{" "}
           <span className="text-orange">continue to work</span>
         </h3>
