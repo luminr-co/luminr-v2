@@ -30,6 +30,7 @@ export default function CalendarSection() {
         <CalendarComponent
           calllink={"luminr/discovery-call"}
           namespace={"discovery-call"}
+          key={"discovery-call"}
         />
       )}
 
@@ -37,6 +38,7 @@ export default function CalendarSection() {
         <CalendarComponent
           calllink={"luminr/discovery-call-seo"}
           namespace={"discovery-call-seo"}
+          key={"discovery-call-seo"}
         />
       )}
     </SectionContainer>

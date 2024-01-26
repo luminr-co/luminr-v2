@@ -109,7 +109,7 @@ export default function NavbarList({ onClose }: Props) {
             <HrIcon /> Website Development
           </Link>
           <Link href={"/seo"} className="flex flex-row gap-2 items-center">
-            <HrIcon /> Seo Development
+            <HrIcon /> Seo for Shopify Stores
           </Link>
         </div>
         <div className="list-none  mt-2 lg:mt-0 hover:text-orange cursor-pointer transition-colors">

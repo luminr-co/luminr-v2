@@ -7,7 +7,7 @@
 /* If you are using npm */
 // npm install @calcom/embed-react
 
-//@ts-ignore
+// @ts-ignore
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 
@@ -16,14 +16,18 @@ interface Props {
   calllink: string;
 }
 
-export default function MyApp({ namespace, calllink }: Props) {
-  
+export default function CalendarComponent({ namespace, calllink }: Props) {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi();
-      cal.ns[namespace]("ui", {
+      // cal.ns[namespace]("ui", {
+      //   styles: { branding: { brandColor: "#DB6332" } },
+      //   hideEventTypeDetails: true,
+      //   layout: "month_view",
+      // });
+      cal("ui", {
         styles: { branding: { brandColor: "#DB6332" } },
-        hideEventTypeDetails: true,
+        hideEventTypeDetails: false,
         layout: "month_view",
       });
     })();
@@ -35,7 +39,7 @@ export default function MyApp({ namespace, calllink }: Props) {
         <Cal
           namespace={namespace}
           calLink={calllink}
-          style={{ width: "100%", height: "100%", overflow: "scroll" }}
+          style={{ width: "100%", height: "100%" }}
           config={{ layout: "month_view" }}
         />
       </div>
