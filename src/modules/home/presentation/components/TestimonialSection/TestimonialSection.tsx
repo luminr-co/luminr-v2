@@ -14,13 +14,13 @@ export default function TestimonialSection() {
       profession: "CEO, Brand Spark Visuals",
       image: HussianImage,
     },
-    {
-      feedback:
-        "“Partnering with Luminr for SEO was a game-changer for Yak9chews. We witnessed a significant boost in our Shopify store's organic sales. Luminr's Foundational Sprint, with its strategic and comprehensive approach, played a crucial role in enhancing our store's visibility and overall performance. Their expertise in SEO is unparalleled, making them an invaluable asset for any Shopify store aiming to thrive in the competitive digital landscape”",
-      name: "Shristi Mishra",
-      profession: "CEO, Yak9chews",
-      image: ShristiImage,
-    },
+  //   {
+  //     feedback:
+  //       "“Partnering with Luminr for SEO was a game-changer for Yak9chews. We witnessed a significant boost in our Shopify store's organic sales. Luminr's Foundational Sprint, with its strategic and comprehensive approach, played a crucial role in enhancing our store's visibility and overall performance. Their expertise in SEO is unparalleled, making them an invaluable asset for any Shopify store aiming to thrive in the competitive digital landscape”",
+  //     name: "Shristi Mishra",
+  //     profession: "CEO, Yak9chews",
+  //     image: ShristiImage,
+  //   },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function TestimonialSection() {
         sectionName="TESTIMONIALS"
         sectionTitle={"What Our Clients Say"}
       >
-        <FeedbackList feedbacks={feedbacks} variant="secondary" />;
+        <FeedbackList feedbacks={feedbacks} variant="primary" />;
       </SectionContainer>
     </section>
   );

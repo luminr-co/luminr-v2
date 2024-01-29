@@ -3,21 +3,23 @@ import { SliderEntity } from "@/core/domain/entities/SliderEntity";
 import tiggImage from "@/core/presentation/assets/images/work/tiggapp.webp";
 import { SectionContainer } from "@/core/presentation/components/SectionContainer";
 import { Slider } from "@/core/presentation/components/Slider";
-import brandpark from "@/core/presentation/assets/images/work/brandpark.webp";
-import vista_mails from "@/core/presentation/assets/images/work/vista-mails.webp";
+import brandspark from "@/core/presentation/assets/images/work/brandpark.webp";
+import vistamails from "@/core/presentation/assets/images/work/vista-mails.webp";
+import chewybliss from "@/core/presentation/assets/images/work/chewybliss.webp";
 
 export default function WorkSection() {
   const works: SliderEntity[] = [
     {
-      image: vista_mails,
+      image: brandspark,
     },
-
     {
-      image: brandpark,
+      image: vistamails,
     },
-
     {
       image: tiggImage,
+    },
+    {
+      image: chewybliss,
     },
   ];
 
